@@ -18,7 +18,8 @@ module.exports = {
       'dancingScript': ['Dancing Script', 'cursive'],
       'mountain': ['Mountains of Christmas', 'serif'],
       'nautigal': ['The Nautigal', 'cursive'],
-      "pt-serif": ['PT Serif', 'serif']
+      "pt-serif": ['PT Serif', 'serif'],
+      "eb-garamond": ['EB Garamond', 'serif'],
     }
   },
   plugins: [],
