@@ -1,14 +1,14 @@
 :root{
-    --Btnaccent: #1e5de7;
+    --Btnaccent: black;
 }
 .customBtn1 {
     border: 0px solid;
     outline: 2px solid;
-    color: black;
-    outline-color: gray;
+    color: white;
+    outline-color: white;
     outline-offset: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-shadow: none;
     cursor: pointer;
     font-size: 14px;
@@ -33,3 +33,14 @@
     color: var(--Btnaccent);
 }
 
+@media screen and (max-width: 768px) {
+    .customBtn1 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .customBtn1:hover {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+}

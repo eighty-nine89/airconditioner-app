@@ -1,0 +1,35 @@
+.backgroundImg {
+    display: grid;
+    place-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 800px;
+}
+
+.cardImg {
+    position: relative;
+    left: 0px;
+    width: 80px;
+    border-radius: 16px;
+    height: 360px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    flex: 0.25;
+}
+
+.cardImg img {
+    height: 360px;
+    object-fit: cover;
+}
+
+.cardImg:hover {
+    flex: 3;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
