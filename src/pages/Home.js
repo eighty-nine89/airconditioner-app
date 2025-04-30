@@ -350,34 +350,34 @@ const Home = () => {
           >
             {[
               {
-                name: "John Doe",
+                name: "John Dankwa",
                 message: "Fantastic service! They installed our AC quickly and professionally.",
                 image: "../assets/home/user.jpg",
               },
               {
-                name: "Jane Smith",
+                name: "Jane Akua Ansong",
                 message: "Reliable maintenance and very courteous technicians.",
-                image: "../assets/home/user-avatar.jpg",
+                image: "../assets/home/female2.jpg",
               },
               {
-                name: "Michael Kafui",
+                name: "Michael Debrah",
                 message: "Great customer care and fast responses. Highly recommend!",
-                image: "../assets/home/user-avatar.jpg",
+                image: "../assets/home/male1.jpg",
               },
               {
-                name: "Esther Fynn",
+                name: "Esther Tetteh",
                 message: "Great products and AC installation.",
-                image: "../assets/home/user-avatar.jpg",
+                image: "../assets/home/female1.png",
               },
               {
                 name: "Sampson Asare",
                 message: "Fast responds for maintainance and great service.",
-                image: "../assets/home/user-avatar.jpg",
+                image: "../assets/home/male2.jpg",
               },
               {
                 name: "Peter Ntem",
                 message: "Great customer for my gas and oven repairs.",
-                image: "../assets/home/user-avatar.jpg",
+                image: "../assets/home/male3.jpg",
               },
             ].map((testimonial, idx) => (
               <div
