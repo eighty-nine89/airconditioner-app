@@ -60,8 +60,8 @@ const Home = () => {
         <div className='flex flex-col lg:px-40 px-5 mx-auto gap-5'>
           <div className='flex flex-col lg:flex-row justify-center items-center flex-1 w-full h-full mx-auto mt-10 lg:px-0 lg:mt-10 gap-5 lg:gap-10'>
             <div className='otherProduct'>
-              <img src='../assets/ourservices/airconditioner3.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-sm' />
-              <p className='text-gray text-base capitalize mt-1'>Air condtioner sales & Installation</p>
+              <img src='../assets/ourservices/airconditioner3.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+              <p className='text-gray text-base capitalize mt-2'>Air condtioner sales & Installation</p>
               <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
                 We offer a wide range of high-quality air conditioning units suitable for both residential and commercial use. Our expert technicians ensure seamless installation,
                 optimizing performance and energy efficiency while maintaining safety and compliance with industry standards.
@@ -69,24 +69,24 @@ const Home = () => {
 
             </div>
             <div className='otherProduct'>
-              <img src='../assets/ourservices/openac.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-sm' />
-              <p className='text-base text-gray capitalize mt-1'>General Maintainance Services</p>
+              <img src='../assets/ourservices/openac.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+              <p className='text-base text-gray capitalize mt-2'>General Maintainance Services</p>
               <p className='text-justify tracking-tighter mt-2 font-light text-sm capitalize'>
                 Our general maintenance services cover routine inspections, cleaning, and minor repairs for home and commercial appliances. Regular
                 maintenance helps extend equipment lifespan, improve performance, and prevent costly breakdowns.
               </p>
             </div>
             <div className='otherProduct'>
-              <img src='../assets/ourservices/oven.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-sm' />
-              <p className='text-gray text-base capitalize mt-1'>Reparation of Gas & Electric Ovens</p>
+              <img src='../assets/ourservices/oven.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+              <p className='text-gray text-base capitalize mt-2'>Reparation of Gas & Electric Ovens</p>
               <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
                 We specialize in diagnosing and repairing faults in both gas and electric ovens. Whether it’s a malfunctioning heating element, ignition issue, or control panel fault,
                 our trained technicians restore your oven’s functionality with reliable and safe solutions.
               </p>
             </div>
             <div className='otherProduct'>
-              <img src='../assets/ourservices/refrigerator.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-sm' />
-              <p className='text-gray text-base capitalize mt-1'>refrigerator repairs</p>
+              <img src='../assets/ourservices/refrigerator.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+              <p className='text-gray text-base capitalize mt-2'>refrigerator repairs</p>
               <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
                 Our refrigerator repair service addresses issues such as poor cooling, unusual noises, compressor faults, and gas leaks. We handle repairs for all
                 major brands and models, ensuring quick restoration to preserve your food and comfort.
@@ -165,7 +165,7 @@ const Home = () => {
         </video>
       </div>
       {/* Gallery */}
-      <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:px-52 xl:px-80 mx-auto'>
+      <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:mb-10 lg:px-52 xl:px-80 mx-auto'>
         <div className='text-center'>
           <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>our gallery</h1>
           <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
