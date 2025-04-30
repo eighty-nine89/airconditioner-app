@@ -41,7 +41,7 @@ const Product = () => {
                                 <article className='shadow'>
                                     <figure>
                                         <img
-                                            src="../assets/products/nasco.jpg"
+                                            src="../assets/products/Nasco.jpg"
                                             alt="air conditioner"
                                         />
                                     </figure>
