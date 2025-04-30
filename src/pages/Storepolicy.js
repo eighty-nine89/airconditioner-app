@@ -10,13 +10,13 @@ const Storepolicy = () => {
             <Preloader />
             <Navbar />
             <ScrollReveal>
-                <div className="text-center font-bold uppercase text-3xl sm:text-4xl lg:text-3xl tracking-widest mt-10 px-6 sm:px-20 lg:px-80 mx-auto">
+                <div className="text-center font-light font-pt-serif uppercase text-3xl sm:text-4xl lg:text-3xl tracking-widest mt-10 px-6 sm:px-20 lg:px-80 mx-auto">
                     store policy
                 </div>
             </ScrollReveal>
             <div className="bg-light-gray flex flex-col w-full mt-16 justify-center mb-10 px-6 sm:px-16 lg:px-32 xl:px-80">
                 <ScrollReveal>
-                    <div className="text-center mt-16 text-xl sm:text-2xl font-semibold uppercase tracking-widest">
+                    <div className="text-center mt-16 text-xl sm:text-2xl font-light font-pt-serif uppercase tracking-widest">
                         <h3>Customer Care</h3>
                         <hr className="mt-6 w-5 items-center border-2 mx-auto" />
                     </div>
@@ -29,7 +29,7 @@ const Storepolicy = () => {
                     </div>
                 </ScrollReveal>
                 <ScrollReveal>
-                    <div className="text-center mt-10 text-xl sm:text-2xl font-semibold uppercase tracking-widest">
+                    <div className="text-center mt-10 text-xl sm:text-2xl font-light font-pt-serif uppercase tracking-widest">
                         <h3>Privacy & Safety</h3>
                         <hr className="mt-6 w-5 items-center border-2 mx-auto" />
                     </div>
@@ -42,7 +42,7 @@ const Storepolicy = () => {
                     </div>
                 </ScrollReveal>
                 <ScrollReveal>
-                    <div className="text-center mt-10 text-xl sm:text-2xl font-semibold uppercase tracking-widest">
+                    <div className="text-center mt-10 text-xl sm:text-2xl font-light font-pt-serif uppercase tracking-widest">
                         <h3>Payment</h3>
                         <hr className="mt-6 w-5 items-center border-2 mx-auto" />
                     </div>

@@ -12,7 +12,7 @@ const ContactUs = () => {
             <Navbar />
             <div className='text-center mt-10 mb-12 px-4'>
                 <ScrollReveal>
-                    <h1 className='uppercase tracking-widest text-3xl lg:text-3xl font-bold'>get in touch</h1>
+                    <h1 className='uppercase tracking-widest text-3xl lg:text-3xl font-light font-pt-serif'>get in touch</h1>
                 </ScrollReveal>
                 {/* Social Icons */}
                 <ScrollReveal animationClass="animate-slide-left" threshold={0.2} delay={300}>
@@ -28,7 +28,7 @@ const ContactUs = () => {
             <div className='bg-light-gray w-full flex flex-col justify-center px-6 sm:px-16 lg:px-40 xl:px-80 mb-16 mx-auto'>
                 <ScrollReveal>
                     <div className='text-center'>
-                        <h3 className='tracking-widest text-xl lg:text-2xl mt-16 font-semibold'>Customer Service</h3>
+                        <h3 className='tracking-widest text-xl lg:text-2xl mt-16 font-light font-pt-serif'>Customer Service</h3>
                         <hr className='mt-6 w-6 items-center border-2 mx-auto' />
                     </div>
                 </ScrollReveal>

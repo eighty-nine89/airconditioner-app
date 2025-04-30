@@ -12,7 +12,7 @@ const Product = () => {
             <Navbar />
             <div className='body mx-auto md:px-10 lg:px-40 ml-5'>
                 <div className='mt-4 capitalize lg:px-20 px-5 mx-auto'>
-                    <h3 className='text-3xl font-semibold'>all products</h3>
+                    <h3 className='text-3xl font-light font-pt-serif'>all products</h3>
                     <p className='text-gray text-start justify-start mt-4 -mb-12 text-sm'>6 Products</p>
                 </div>
                 <div className="background">
@@ -22,7 +22,7 @@ const Product = () => {
                                 <article className='shadow'>
                                     <figure>
                                         <img
-                                            src="./assets/products/airconditioner3.jpg"
+                                            src="./assets/products/hisense.jpg"
                                             alt="air conditioner"
                                         />
                                     </figure>
@@ -41,7 +41,7 @@ const Product = () => {
                                 <article className='shadow'>
                                     <figure>
                                         <img
-                                            src="../assets/products/airconditioner2.jpg"
+                                            src="../assets/products/nasco.jpg"
                                             alt="air conditioner"
                                         />
                                     </figure>
@@ -60,7 +60,7 @@ const Product = () => {
                                 <article className='shadow'>
                                     <figure>
                                         <img
-                                            src="./assets/products/airconditioner3.jpg"
+                                            src="./assets/products/tcl.png"
                                             alt="air conditioner"
                                         />
                                     </figure>
@@ -79,7 +79,7 @@ const Product = () => {
                                 <article className='shadow'>
                                     <figure>
                                         <img
-                                            src="../assets/products/airconditioner2.jpg"
+                                            src="../assets/products/bruhm.jpg"
                                             alt="air conditioner"
                                         />
                                     </figure>
@@ -98,7 +98,7 @@ const Product = () => {
                                 <article className='shadow'>
                                     <figure>
                                         <img
-                                            src="./assets/products/airconditioner3.jpg"
+                                            src="./assets/products/midea.webp"
                                             alt="air conditioner"
                                         />
                                     </figure>
@@ -117,7 +117,7 @@ const Product = () => {
                                 <article className='shadow'>
                                     <figure>
                                         <img
-                                            src="../assets/products/airconditioner2.jpg"
+                                            src="../assets/products/lg.webp"
                                             alt="air conditioner"
                                         />
                                     </figure>

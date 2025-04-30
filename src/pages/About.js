@@ -134,7 +134,7 @@ const About = () => {
             <ScrollReveal>
                 <div className='backgroundImg mt-16 mb-16 px-4 sm:px-10 lg:px-32 xl:px-80'>
                     <div className='gallery grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
-                        {["mega1.jpg", "mega1.jpg", "mega1.jpg", "mega1.jpg", "mega1.jpg"].map((img, index) => (
+                        {["mega1.jpg", "refrigerator.jpg", "gasrepair.jpg", "ac1.avif", "acrepairs.jpg"].map((img, index) => (
                             <div className='cardImg' key={index}>
                                 <figure>
                                     <img src={`../assets/gallery/${img}`} alt='Preview' className='w-full h-auto rounded-lg shadow-md' />

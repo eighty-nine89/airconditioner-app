@@ -53,7 +53,7 @@ const Home = () => {
       <div className='relative bg-light-gray'>
         <ScrollReveal>
           <div className='pt-10'>
-            <h1 className='text-3xl font-eb-garamond font-semibold'>Our Services</h1>
+            <Link to={'services'}><h1 className='text-3xl font-pt-serif font-light'>Our Services</h1></Link>
             <hr className='mt-5 w-6 mx-auto text-center items-center border-2 lg:mx-auto' />
           </div>
         </ScrollReveal>
@@ -62,7 +62,7 @@ const Home = () => {
           <ScrollReveal>
             <div className='flex flex-col lg:flex-row justify-center items-center flex-1 w-full h-full mx-auto mt-10 lg:px-0 lg:mt-10 gap-5 lg:gap-10'>
               <div className='otherProduct'>
-                <img src='../assets/ourservices/airconditioner3.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+                <img src='../assets/ourservices/acrepairs.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
                 <p className='text-gray text-base capitalize mt-2'>Air condtioner sales & Installation</p>
                 <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
                   We offer a wide range of high-quality air conditioning units suitable for both residential and commercial use. Our expert technicians ensure seamless installation,
@@ -79,7 +79,7 @@ const Home = () => {
                 </p>
               </div>
               <div className='otherProduct'>
-                <img src='../assets/ourservices/oven.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+                <img src='../assets/ourservices/gasrepair.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
                 <p className='text-gray text-base capitalize mt-2'>Reparation of Gas & Electric Ovens</p>
                 <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
                   We specialize in diagnosing and repairing faults in both gas and electric ovens. Whether it’s a malfunctioning heating element, ignition issue, or control panel fault,
@@ -107,7 +107,7 @@ const Home = () => {
       <div className='relative lg:mb-10 mb-10 lg:px-0 mx-auto w-full'>
         <ScrollReveal>
           <div className='pt-10'>
-            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>Why us</h1>
+            <h1 className='text-3xl font-pt-serif font-light capitalize'>Why us</h1>
             <hr className='mt-5 w-6 text-center items-center mx-auto border-2 lg:mx-auto' />
           </div>
         </ScrollReveal>
@@ -142,11 +142,11 @@ const Home = () => {
         <div className='relative flex flex-row justify-between gap-10 items-center w-full h-80 bg-light-gray lg:mb-10 mb-10'>
           {/* Image */}
           <div className='flex-1 lg:visible invisible justify-center items-center w-full h-full'>
-            <img src="../assets/home/airconditioner.jpg" alt="Air Conditioner" className='w-full h-80 object-cover' />
+            <img src="../assets/home/ac.jpg" alt="Air Conditioner" className='w-full h-80 object-cover' />
           </div>
           {/* About us */}
           <div className='flex flex-col lg:flex-1 justify-center items-center w-full h-full'>
-            <h1 className='text-3xl font-eb-garamond font-semibold'>About us</h1>
+            <Link to={'/aboutus'}><h1 className='text-3xl font-pt-serif font-light'>About us</h1></Link>
             <hr className='mt-5 w-6 text-center items-center border-2 lg:mx-auto' />
             <p className='text-justify mt-5 tracking-tighter font-light text-sm capitalize pr-14 pl-4'>
               Megatech cooling services is a registered firm that provides air-conditioning and electrical
@@ -165,7 +165,7 @@ const Home = () => {
       <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:px-52 xl:px-80 mx-auto'>
         <ScrollReveal>
           <div className='text-center'>
-            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'><span className="text-gray">watch:</span> our  work</h1>
+            <h1 className='text-3xl font-pt-serif font-light capitalize'><span className="text-gray">watch:</span> our  work</h1>
             <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
           </div>
         </ScrollReveal>
@@ -183,7 +183,7 @@ const Home = () => {
       <ScrollReveal>
         <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:mb-10 lg:px-52 xl:px-80 mx-auto'>
           <div className='text-center'>
-            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>our gallery</h1>
+            <Link to={'/gallery'}><h1 className='text-3xl font-pt-serif font-light capitalize'>our gallery</h1></Link>
             <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
           </div>
         </div>
@@ -191,7 +191,7 @@ const Home = () => {
       <ScrollReveal>
         <div className='backgroundImg mt-16 mb-16 px-4 sm:px-10 lg:px-32 xl:px-80'>
           <div className='gallery grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
-            {["mega1.jpg", "mega1.jpg", "mega1.jpg", "mega1.jpg", "mega1.jpg", "mega1.jpg"].map((img, index) => (
+            {["mega1.jpg", "refrigerator.jpg", "gasrepair.jpg", "ac1.avif", "acrepairs.jpg", "openac.jpg"].map((img, index) => (
               <div className='cardImg' key={index}>
                 <figure>
                   <img src={`../assets/gallery/${img}`} alt='Preview' className='w-full h-auto rounded-lg shadow-md' />
@@ -205,7 +205,7 @@ const Home = () => {
       <div className="mt-5 px-4 lg:px-52">
         <ScrollReveal>
           <div className="text-center mt-2 fade-in">
-            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>Our clients</h1>
+            <h1 className='text-3xl font-pt-serif font-light capitalize'>Our clients</h1>
             <hr className='mt-5 w-6 text-center mx-auto items-center border-2 lg:mx-auto' />
           </div>
         </ScrollReveal>
@@ -241,7 +241,7 @@ const Home = () => {
       <div className='relative lg:px-64 bg-light-gray'>
         <ScrollReveal>
           <div className='lg:pt-10 pt-10'>
-            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>contact us</h1>
+            <Link to={'/contactus'}><h1 className='text-3xl font-pt-serif font-light capitalize'>contact us</h1></Link>
             <hr className='mt-5 w-6 text-center mx-auto items-center border-2 lg:mx-auto' />
           </div>
         </ScrollReveal>
@@ -302,7 +302,7 @@ const Home = () => {
       <div className='relative lg:mb-10 mb-10 lg:px-0 lg:mt-10 mt-5'>
         <ScrollReveal>
           <div>
-            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>get direction</h1>
+            <h1 className='text-3xl font-pt-serif font-light capitalize'>get direction</h1>
             <hr className='mt-5 w-6 text- mx-auto items-center border-2 lg:mx-auto' />
           </div>
         </ScrollReveal>

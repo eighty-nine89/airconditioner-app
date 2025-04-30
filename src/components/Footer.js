@@ -13,7 +13,7 @@ const Footer = () => {
                             <h4 className='text-lg uppercase font-light font-pt-serif text-center text-decoration-none'>MegaTech Cooling Services</h4>
                         </Link>
                     </div>
-                    <p className='font-light lg:text-center text-xl font-dancingScript'>MegaTech, Cooling Time..</p>
+                    <p className='font-light lg:text-center text-xl font-dancingScript'>MegaTech, Cooling Time...</p>
                 </div>
                 <div className='items-center text-center mt-5'>
                     <ul className='flex flex-col gap-4 lg:gap-4 whitespace-nowrap font-light text-sm'>

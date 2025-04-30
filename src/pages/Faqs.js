@@ -43,7 +43,7 @@ const Faqs = () => {
             <Navbar />
             {/* Page Title */}
             <ScrollReveal>
-                <div className='text-center font-bold uppercase text-2xl sm:text-3xl lg:text-3xl tracking-widest mt-10 px-4 sm:px-10 lg:px-32 xl:px-80 mx-auto'>
+                <div className='text-center font-light font-pt-serif uppercase text-2xl sm:text-3xl lg:text-3xl tracking-widest mt-10 px-4 sm:px-10 lg:px-32 xl:px-80 mx-auto'>
                     faqs
                 </div>
             </ScrollReveal>
@@ -53,7 +53,7 @@ const Faqs = () => {
 
                 {/* Section Title */}
                 <ScrollReveal>
-                    <div className='text-center mt-10 sm:mt-16 text-xl lg:text-xl sm:text-2xl font-semibold uppercase tracking-widest'>
+                    <div className='text-center mt-10 sm:mt-16 text-xl lg:text-xl sm:text-2xl font-light font-pt-serif uppercase tracking-widest'>
                         <h3>The most common questions</h3>
                         <hr className='mt-4 w-10 border-2 mx-auto' />
                     </div>

@@ -11,7 +11,7 @@ const Deliverypolicy = () => {
             <Navbar />
             {/* Page Title */}
             <ScrollReveal>
-                <div className='text-center font-bold uppercase text-3xl sm:text-4xl lg:text-2xl tracking-widest mt-10 px-6 sm:px-20 lg:px-80 mx-auto'>
+                <div className='text-center font-light font-pt-serif uppercase text-3xl sm:text-4xl lg:text-2xl tracking-widest mt-10 px-6 sm:px-20 lg:px-80 mx-auto'>
                     delivery & return policy
                 </div>
             </ScrollReveal>
@@ -20,7 +20,7 @@ const Deliverypolicy = () => {
 
                 {/* Delivery Policy Section */}
                 <ScrollReveal>
-                    <div className='text-center mt-10 text-xl sm:text-2xl lg:text-xl font-semibold uppercase tracking-widest'>
+                    <div className='text-center mt-10 text-xl sm:text-2xl lg:text-xl font-light font-pt-serif uppercase tracking-widest'>
                         <h3>Delivery policy</h3>
                         <hr className='mt-6 w-8 border-2 mx-auto' />
                     </div>
@@ -28,7 +28,7 @@ const Deliverypolicy = () => {
                 <ScrollReveal>
                     <div className='mt-8 text-center mb-12'>
                         <p className='font-light text-sm sm:text-sm text-justify'>
-                            <span className='capitalize text-base font-semibold'>1. Delivery Coverage</span><br />
+                            <span className='capitalize text-base font-light font-pt-serif'>1. Delivery Coverage</span><br />
                             We offer delivery services within all major cities and towns in Ghana. For areas outside our standard delivery zones, additional charges or alternative arrangements may apply.
                             <br />
                             <span className='capitalize text-base font-semibold'>2. Delivery timelines</span><br />
@@ -53,7 +53,7 @@ const Deliverypolicy = () => {
                 </ScrollReveal>
                 {/* Return & Exchange Policy Section */}
                 <ScrollReveal>
-                    <div className='text-center mt-10 text-xl sm:text-2xl lg:text-xl font-semibold uppercase tracking-widest'>
+                    <div className='text-center mt-10 text-xl sm:text-2xl lg:text-xl font-light font-pt-serif uppercase tracking-widest'>
                         <h3>Return & Exchange policy</h3>
                         <hr className='mt-6 w-8 border-2 mx-auto' />
                     </div>
@@ -94,7 +94,7 @@ const Deliverypolicy = () => {
                 </ScrollReveal>
                 {/* service policy */}
                 <ScrollReveal>
-                    <div className='text-center mt-10 text-xl sm:text-2xl lg:text-xl font-semibold uppercase tracking-widest'>
+                    <div className='text-center mt-10 text-xl sm:text-2xl lg:text-xl font-light font-pt-serif uppercase tracking-widest'>
                         <h3>Service Policy</h3>
                         <hr className='mt-6 w-8 border-2 mx-auto' />
                     </div>

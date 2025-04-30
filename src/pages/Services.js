@@ -15,7 +15,7 @@ const Services = () => {
             <Navbar />
             {/* service title */}
             <ScrollReveal>
-                <div className='text-center font-bold font-eb-garamond text-2xl sm:text-3xl lg:text-3xl tracking-widest mt-10 px-4 sm:px-10 lg:px-32 xl:px-80 mx-auto capitalize'>
+                <div className='text-center font-light font-pt-serif text-2xl sm:text-3xl lg:text-3xl tracking-widest mt-10 px-4 sm:px-10 lg:px-32 xl:px-80 mx-auto capitalize'>
                     <h3>Our services</h3>
                     <hr className='mt-6 w-6 items-center border-2 mx-auto' />
                 </div>
@@ -84,7 +84,7 @@ const Services = () => {
             <ScrollReveal>
                 <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:px-52 xl:px-80 mx-auto'>
                     <div className='text-center'>
-                        <h1 className='text-3xl font-eb-garamond font-semibold capitalize'><span className="text-gray">watch:</span> our  work</h1>
+                        <h1 className='text-3xl font-pt-serif font-light capitalize'><span className="text-gray">watch:</span> our  work</h1>
                         <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
                     </div>
                 </div>
