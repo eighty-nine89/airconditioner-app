@@ -12,8 +12,7 @@ import { CiSettings } from 'react-icons/ci';
 import { FaScaleBalanced, FaUserCheck } from 'react-icons/fa6';
 import Footer from '../components/Footer';
 import { Preloader } from '../components/Preloader';
-// import { ChevronLeft, ChevronRight } from "lucide-react";
-// import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
+import ScrollReveal from '../components/ScrollReveal';
 
 const Home = () => {
   const scrollRef = useRef(null);
@@ -52,312 +51,351 @@ const Home = () => {
 
       {/* our services */}
       <div className='relative bg-light-gray'>
-        <div className='pt-10'>
-          <h1 className='text-3xl font-eb-garamond font-semibold'>Our Services</h1>
-          <hr className='mt-5 w-6 mx-auto text-center items-center border-2 lg:mx-auto' />
-        </div>
+        <ScrollReveal>
+          <div className='pt-10'>
+            <h1 className='text-3xl font-eb-garamond font-semibold'>Our Services</h1>
+            <hr className='mt-5 w-6 mx-auto text-center items-center border-2 lg:mx-auto' />
+          </div>
+        </ScrollReveal>
         {/* our services */}
         <div className='flex flex-col lg:px-40 px-5 mx-auto gap-5'>
-          <div className='flex flex-col lg:flex-row justify-center items-center flex-1 w-full h-full mx-auto mt-10 lg:px-0 lg:mt-10 gap-5 lg:gap-10'>
-            <div className='otherProduct'>
-              <img src='../assets/ourservices/airconditioner3.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
-              <p className='text-gray text-base capitalize mt-2'>Air condtioner sales & Installation</p>
-              <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
-                We offer a wide range of high-quality air conditioning units suitable for both residential and commercial use. Our expert technicians ensure seamless installation,
-                optimizing performance and energy efficiency while maintaining safety and compliance with industry standards.
-              </p>
+          <ScrollReveal>
+            <div className='flex flex-col lg:flex-row justify-center items-center flex-1 w-full h-full mx-auto mt-10 lg:px-0 lg:mt-10 gap-5 lg:gap-10'>
+              <div className='otherProduct'>
+                <img src='../assets/ourservices/airconditioner3.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+                <p className='text-gray text-base capitalize mt-2'>Air condtioner sales & Installation</p>
+                <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
+                  We offer a wide range of high-quality air conditioning units suitable for both residential and commercial use. Our expert technicians ensure seamless installation,
+                  optimizing performance and energy efficiency while maintaining safety and compliance with industry standards.
+                </p>
 
+              </div>
+              <div className='otherProduct'>
+                <img src='../assets/ourservices/openac.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+                <p className='text-base text-gray capitalize mt-2'>General Maintainance Services</p>
+                <p className='text-justify tracking-tighter mt-2 font-light text-sm capitalize'>
+                  Our general maintenance services cover routine inspections, cleaning, and minor repairs for home and commercial appliances. Regular
+                  maintenance helps extend equipment lifespan, improve performance, and prevent costly breakdowns.
+                </p>
+              </div>
+              <div className='otherProduct'>
+                <img src='../assets/ourservices/oven.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+                <p className='text-gray text-base capitalize mt-2'>Reparation of Gas & Electric Ovens</p>
+                <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
+                  We specialize in diagnosing and repairing faults in both gas and electric ovens. Whether it’s a malfunctioning heating element, ignition issue, or control panel fault,
+                  our trained technicians restore your oven’s functionality with reliable and safe solutions.
+                </p>
+              </div>
+              <div className='otherProduct'>
+                <img src='../assets/ourservices/refrigerator.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+                <p className='text-gray text-base capitalize mt-2'>refrigerator repairs</p>
+                <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
+                  Our refrigerator repair service addresses issues such as poor cooling, unusual noises, compressor faults, and gas leaks. We handle repairs for all
+                  major brands and models, ensuring quick restoration to preserve your food and comfort.
+                </p>
+              </div>
             </div>
-            <div className='otherProduct'>
-              <img src='../assets/ourservices/openac.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
-              <p className='text-base text-gray capitalize mt-2'>General Maintainance Services</p>
-              <p className='text-justify tracking-tighter mt-2 font-light text-sm capitalize'>
-                Our general maintenance services cover routine inspections, cleaning, and minor repairs for home and commercial appliances. Regular
-                maintenance helps extend equipment lifespan, improve performance, and prevent costly breakdowns.
-              </p>
-            </div>
-            <div className='otherProduct'>
-              <img src='../assets/ourservices/oven.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
-              <p className='text-gray text-base capitalize mt-2'>Reparation of Gas & Electric Ovens</p>
-              <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
-                We specialize in diagnosing and repairing faults in both gas and electric ovens. Whether it’s a malfunctioning heating element, ignition issue, or control panel fault,
-                our trained technicians restore your oven’s functionality with reliable and safe solutions.
-              </p>
-            </div>
-            <div className='otherProduct'>
-              <img src='../assets/ourservices/refrigerator.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
-              <p className='text-gray text-base capitalize mt-2'>refrigerator repairs</p>
-              <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
-                Our refrigerator repair service addresses issues such as poor cooling, unusual noises, compressor faults, and gas leaks. We handle repairs for all
-                major brands and models, ensuring quick restoration to preserve your food and comfort.
-              </p>
-            </div>
-          </div>
-          <Link to='/services' className='mb-10 lg:mb-10'>
-            <button type='submit' className='border-x border-y mt-3 hover:text-white hover:bg-dark-gray text-sm pl-4 pr-4 rounded-md p-2 capitalize'>learn more</button>
-          </Link>
+          </ScrollReveal>
+          <ScrollReveal animationClass="animate-slide-left mb-10 lg:mb-10" threshold={0.2} delay={300}>
+            <Link to='/services' className='mb-10 lg:mb-10'>
+              <button type='submit' className='border-x border-y mt-3 hover:text-white hover:bg-dark-gray text-sm pl-4 pr-4 rounded-md p-2 capitalize'>learn more</button>
+            </Link>
+          </ScrollReveal>
         </div>
       </div>
       {/* why us */}
       <div className='relative lg:mb-10 mb-10 lg:px-0 mx-auto w-full'>
-        <div className='pt-10'>
-          <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>Why us</h1>
-          <hr className='mt-5 w-6 text-center items-center mx-auto border-2 lg:mx-auto' />
-        </div>
+        <ScrollReveal>
+          <div className='pt-10'>
+            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>Why us</h1>
+            <hr className='mt-5 w-6 text-center items-center mx-auto border-2 lg:mx-auto' />
+          </div>
+        </ScrollReveal>
         {/* why  us features */}
-        <div className='flex flex-col flex-2 lg:pt-10 lg:pb-16 lg:flex-row justify-between items-center w-full h-full mx-auto lg:px-80 mb-10 lg:mb-10 mt-5 gap-2 lg:gap-1'>
-          <div className="flex flex-col justify-center items-center text-center w-full h-full lg:gap-5 gap-5">
-            <div className='flex flex-col lg:flex-row items-center lg:gap-5 gap-5 text-lg text-gray capitalize'>
-              <LiaToolsSolid className='text-6xl text-gray hover:text-black' />
-              <p>Highly effective services </p>
+        <ScrollReveal>
+          <div className='flex flex-col flex-2 lg:pt-10 lg:pb-16 lg:flex-row justify-between items-center w-full h-full mx-auto lg:px-80 mb-10 lg:mb-10 mt-5 gap-2 lg:gap-1'>
+            <div className="flex flex-col justify-center items-center text-center w-full h-full lg:gap-5 gap-5">
+              <div className='flex flex-col lg:flex-row items-center lg:gap-5 gap-5 text-lg text-gray capitalize'>
+                <LiaToolsSolid className='text-6xl text-gray hover:text-black' />
+                <p>Highly effective services </p>
+              </div>
+              <div className='flex flex-col lg:flex-row items-center lg:gap-5 gap-5 text-lg text-gray capitalize'>
+                <CiSettings className='text-6xl text-gray hover:text-black' />
+                <p>customize resolution</p>
+              </div>
             </div>
-            <div className='flex flex-col lg:flex-row items-center lg:gap-5 gap-5 text-lg text-gray capitalize'>
-              <CiSettings className='text-6xl text-gray hover:text-black' />
-              <p>customize resolution</p>
+            <div className="flex flex-col justify-center items-center w-full h-full lg:gap-5 gap-5">
+              <div className='flex flex-col lg:flex-row items-center lg:gap-5 gap-5 text-lg text-gray capitalize'>
+                <FaUserCheck className='text-6xl text-gray hover:text-black' />
+                <p>Expect teams of professionals </p>
+              </div>
+              <div className='flex flex-col lg:flex-row items-center lg:gap-5 gap-5 text-lg text-gray capitalize'>
+                <FaScaleBalanced className='text-6xl text-gray hover:text-black' />
+                <p>Norminal prices of products </p>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center w-full h-full lg:gap-5 gap-5">
-            <div className='flex flex-col lg:flex-row items-center lg:gap-5 gap-5 text-lg text-gray capitalize'>
-              <FaUserCheck className='text-6xl text-gray hover:text-black' />
-              <p>Expect teams of professionals </p>
-            </div>
-            <div className='flex flex-col lg:flex-row items-center lg:gap-5 gap-5 text-lg text-gray capitalize'>
-              <FaScaleBalanced className='text-6xl text-gray hover:text-black' />
-              <p>Norminal prices of products </p>
-            </div>
-          </div>
-        </div>
+        </ScrollReveal>
       </div>
       {/* about us */}
-      <div className='relative flex flex-row justify-between gap-10 items-center w-full h-80 bg-light-gray lg:mb-10 mb-10'>
-        {/* Image */}
-        <div className='flex-1 lg:visible invisible justify-center items-center w-full h-full'>
-          <img src="../assets/home/airconditioner.jpg" alt="Air Conditioner" className='w-full h-80 object-cover' />
+      <ScrollReveal>
+        <div className='relative flex flex-row justify-between gap-10 items-center w-full h-80 bg-light-gray lg:mb-10 mb-10'>
+          {/* Image */}
+          <div className='flex-1 lg:visible invisible justify-center items-center w-full h-full'>
+            <img src="../assets/home/airconditioner.jpg" alt="Air Conditioner" className='w-full h-80 object-cover' />
+          </div>
+          {/* About us */}
+          <div className='flex flex-col lg:flex-1 justify-center items-center w-full h-full'>
+            <h1 className='text-3xl font-eb-garamond font-semibold'>About us</h1>
+            <hr className='mt-5 w-6 text-center items-center border-2 lg:mx-auto' />
+            <p className='text-justify mt-5 tracking-tighter font-light text-sm capitalize pr-14 pl-4'>
+              Megatech cooling services is a registered firm that provides air-conditioning and electrical
+              engineering services such as: refrigeration, air condition repairs, servicing, maintenance and
+              installation; general electrical wiring and repairs; commercial and domestic appliances maintenance
+              and servicing; cooking stoves and gas cookers repairs and installation; refrigerator and freezer repairs
+              and installation; and electric motor maintenance and electric system conditions.
+            </p>
+            <span className='justify-center text-center mt-2'>
+              <Link to="/aboutus"><p className='capitalize text-gray hover:text-black font-light text-base lg:text-base underline text-center'>read More</p></Link>
+            </span>
+          </div>
         </div>
-        {/* About us */}
-        <div className='flex flex-col lg:flex-1 justify-center items-center w-full h-full'>
-          <h1 className='text-3xl font-eb-garamond font-semibold'>About us</h1>
-          <hr className='mt-5 w-6 text-center items-center border-2 lg:mx-auto' />
-          <p className='text-justify mt-5 tracking-tighter font-light text-sm capitalize pr-14 pl-4'>
-            Megatech cooling services is a registered firm that provides air-conditioning and electrical
-            engineering services such as: refrigeration, air condition repairs, servicing, maintenance and
-            installation; general electrical wiring and repairs; commercial and domestic appliances maintenance
-            and servicing; cooking stoves and gas cookers repairs and installation; refrigerator and freezer repairs
-            and installation; and electric motor maintenance and electric system conditions.
-          </p>
-          <span className='justify-center text-center mt-2'>
-            <Link to="/aboutus"><p className='capitalize text-gray hover:text-black font-light text-base lg:text-base underline text-center'>read More</p></Link>
-          </span>
-        </div>
-      </div>
+      </ScrollReveal>
       {/* our work */}
       <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:px-52 xl:px-80 mx-auto'>
-        <div className='text-center'>
-          <h1 className='text-3xl font-eb-garamond font-semibold capitalize'><span className="text-gray">watch:</span> our  work</h1>
-          <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
+        <ScrollReveal>
+          <div className='text-center'>
+            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'><span className="text-gray">watch:</span> our  work</h1>
+            <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
+          </div>
+        </ScrollReveal>
+      </div>
+      <ScrollReveal animationClass="animate-slide-left" threshold={0.2} delay={300}>
+        {/* video */}
+        <div className='backgroundImg mt-16 mb-16 px-4 sm:px-10 lg:px-32 xl:px-80'>
+          <video className='w-full h-auto rounded-lg shadow-md' controls loop>
+            <source src="../assets/video/acinstallationvideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-      </div>
-      {/* video */}
-      <div className='backgroundImg mt-16 mb-16 px-4 sm:px-10 lg:px-32 xl:px-80'>
-        <video className='w-full h-auto rounded-lg shadow-md' controls loop>
-          <source src="../assets/video/acinstallationvideo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      </ScrollReveal>
       {/* Gallery */}
-      <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:mb-10 lg:px-52 xl:px-80 mx-auto'>
-        <div className='text-center'>
-          <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>our gallery</h1>
-          <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
+      <ScrollReveal>
+        <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:mb-10 lg:px-52 xl:px-80 mx-auto'>
+          <div className='text-center'>
+            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>our gallery</h1>
+            <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
+          </div>
         </div>
-      </div>
-      <div className='backgroundImg mt-16 mb-16 px-4 sm:px-10 lg:px-32 xl:px-80'>
-        <div className='gallery grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
-          {["mega1.jpg", "mega1.jpg", "mega1.jpg", "mega1.jpg", "mega1.jpg", "mega1.jpg"].map((img, index) => (
-            <div className='cardImg' key={index}>
-              <figure>
-                <img src={`../assets/gallery/${img}`} alt='Preview' className='w-full h-auto rounded-lg shadow-md' />
-              </figure>
-            </div>
-          ))}
-        </div>
-      </div>
-      {/* clients */}
-      <div className="mt-5 px-4 lg:px-52">
-        <div className="text-center mt-2 fade-in">
-          <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>Our clients</h1>
-          <hr className='mt-5 w-6 text-center mx-auto items-center border-2 lg:mx-auto' />
-        </div>
-
-        <div className="overflow-hidden w-full lg:px-52 mt-5 lg:mt-5 mb-5 fade-in">
-          <div className="flex animate-slide gap-8 w-max">
-            {[
-              "../assets/sliders/atlanticcatering.png",
-              "../assets/sliders/frankotrading.jpg",
-              "../assets/sliders/koforiduaclinic.jpeg",
-              "../assets/sliders/mpharma.jpg",
-              "../assets/sliders/transass.avif",
-              "../assets/sliders/atlanticcatering.png",
-              "../assets/sliders/frankotrading.jpg",
-              "../assets/sliders/koforiduaclinic.jpeg",
-              "../assets/sliders/mpharma.jpg",
-              "../assets/sliders/transass.avif",
-              "../assets/sliders/atlanticcatering.png",
-              "../assets/sliders/frankotrading.jpg",
-              "../assets/sliders/koforiduaclinic.jpeg",
-              "../assets/sliders/mpharma.jpg",
-              "../assets/sliders/transass.avif",
-            ].map((src, idx) => (
-              <div key={idx} className="min-w-[120px] flex-shrink-0">
-                <img src={src} alt="carousel logo" className="w-52 h-52 object-contain rounded-lg" />
+      </ScrollReveal>
+      <ScrollReveal>
+        <div className='backgroundImg mt-16 mb-16 px-4 sm:px-10 lg:px-32 xl:px-80'>
+          <div className='gallery grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
+            {["mega1.jpg", "mega1.jpg", "mega1.jpg", "mega1.jpg", "mega1.jpg", "mega1.jpg"].map((img, index) => (
+              <div className='cardImg' key={index}>
+                <figure>
+                  <img src={`../assets/gallery/${img}`} alt='Preview' className='w-full h-auto rounded-lg shadow-md' />
+                </figure>
               </div>
             ))}
           </div>
         </div>
+      </ScrollReveal>
+      {/* clients */}
+      <div className="mt-5 px-4 lg:px-52">
+        <ScrollReveal>
+          <div className="text-center mt-2 fade-in">
+            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>Our clients</h1>
+            <hr className='mt-5 w-6 text-center mx-auto items-center border-2 lg:mx-auto' />
+          </div>
+        </ScrollReveal>
+        <ScrollReveal>
+          <div className="overflow-hidden w-full lg:px-52 mt-5 lg:mt-5 mb-5 fade-in">
+            <div className="flex animate-slide gap-8 w-max">
+              {[
+                "../assets/sliders/atlanticcatering.png",
+                "../assets/sliders/frankotrading.jpg",
+                "../assets/sliders/koforiduaclinic.jpeg",
+                "../assets/sliders/mpharma.jpg",
+                "../assets/sliders/transass.avif",
+                "../assets/sliders/atlanticcatering.png",
+                "../assets/sliders/frankotrading.jpg",
+                "../assets/sliders/koforiduaclinic.jpeg",
+                "../assets/sliders/mpharma.jpg",
+                "../assets/sliders/transass.avif",
+                "../assets/sliders/atlanticcatering.png",
+                "../assets/sliders/frankotrading.jpg",
+                "../assets/sliders/koforiduaclinic.jpeg",
+                "../assets/sliders/mpharma.jpg",
+                "../assets/sliders/transass.avif",
+              ].map((src, idx) => (
+                <div key={idx} className="min-w-[120px] flex-shrink-0">
+                  <img src={src} alt="carousel logo" className="w-52 h-52 object-contain rounded-lg" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
       </div>
       {/* Contact Us */}
       <div className='relative lg:px-64 bg-light-gray'>
-        <div className='lg:pt-10 pt-10'>
-          <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>contact us</h1>
-          <hr className='mt-5 w-6 text-center mx-auto items-center border-2 lg:mx-auto' />
-        </div>
+        <ScrollReveal>
+          <div className='lg:pt-10 pt-10'>
+            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>contact us</h1>
+            <hr className='mt-5 w-6 text-center mx-auto items-center border-2 lg:mx-auto' />
+          </div>
+        </ScrollReveal>
         {/* information */}
         <div className='flex flex-col lg:flex-row justify-between items-center w-full h-full mx-auto mt-5 lg:px-0 lg:mt-10 lg:pb-16 pb-16 gap-2'>
-          <div className='lg:border-r lg:border-y-0 border-b text-justify tracking-tighter mt-3 text-sm pl-4 pr-4 p-6'>
-            <div className='flex justify-center items-center'>
-              <PiMapPinArea className='text-3xl text-gray hover:text-black' />
-            </div>
-            <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our Office Address</h3>
-            <p className='whitespace-nowrap lg:text-base'>
-              Adjen Kotoku, Amasaman, Accra
-            </p>
-          </div>
-          <div className='lg:border-r lg:border-y-0 border-b text-justify tracking-tighter mt-3 text-sm pl-4 pr-4 p-6'>
-            <div className="justify-center items-center text-center">
+          <ScrollReveal>
+            <div className='lg:border-r lg:border-y-0 border-b text-justify tracking-tighter mt-3 text-sm pl-4 pr-4 p-6'>
               <div className='flex justify-center items-center'>
-                <MdOutlineEmail className='text-3xl text-gray hover:text-black' />
+                <PiMapPinArea className='text-3xl text-gray hover:text-black' />
               </div>
-              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> general enquires</h3>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our Office Address</h3>
               <p className='whitespace-nowrap lg:text-base'>
-                megatectcoolingservices@gmail.com
+                Adjen Kotoku, Amasaman, Accra
               </p>
             </div>
-          </div>
-          <div className='lg:border-r lg:border-y-0 border-b text-justify tracking-tighter mt-3 text-sm pl-4 pr-4 p-6'>
-            <div className='flex justify-center items-center'>
-              <FiPhoneCall className='text-3xl text-gray hover:text-black' />
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className='lg:border-r lg:border-y-0 border-b text-justify tracking-tighter mt-3 text-sm pl-4 pr-4 p-6'>
+              <div className="justify-center items-center text-center">
+                <div className='flex justify-center items-center'>
+                  <MdOutlineEmail className='text-3xl text-gray hover:text-black' />
+                </div>
+                <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> general enquires</h3>
+                <p className='whitespace-nowrap lg:text-base'>
+                  megatectcoolingservices@gmail.com
+                </p>
+              </div>
             </div>
-            <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Call Us</h3>
-            <p className='whitespace-nowrap lg:text-base text-center'>
-              +233 0244523845 | +233 0201588787
-            </p>
-          </div>
-          <div className='text-justify tracking-tighter mt-3 text-sm pl-4 pr-4 p-6'>
-            <div className='flex justify-center items-center'>
-              <IoTimeOutline className='text-3xl text-gray hover:text-black' />
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className='lg:border-r lg:border-y-0 border-b text-justify tracking-tighter mt-3 text-sm pl-4 pr-4 p-6'>
+              <div className='flex justify-center items-center'>
+                <FiPhoneCall className='text-3xl text-gray hover:text-black' />
+              </div>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Call Us</h3>
+              <p className='whitespace-nowrap lg:text-base text-center'>
+                +233 0244523845 | +233 0201588787
+              </p>
             </div>
-            <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our timings</h3>
-            <p className='whitespace-nowrap lg:text-base'>
-              Monday - Saturday
-            </p>
-            <p className='whitespace-nowrap lg:text-base'>
-              8:00 am - 7:00 pm
-            </p>
-          </div>
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className='text-justify tracking-tighter mt-3 text-sm pl-4 pr-4 p-6'>
+              <div className='flex justify-center items-center'>
+                <IoTimeOutline className='text-3xl text-gray hover:text-black' />
+              </div>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our timings</h3>
+              <p className='whitespace-nowrap lg:text-base'>
+                Monday - Saturday
+              </p>
+              <p className='whitespace-nowrap lg:text-base'>
+                8:00 am - 7:00 pm
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
       {/* get direction */}
       <div className='relative lg:mb-10 mb-10 lg:px-0 lg:mt-10 mt-5'>
-        <div>
-          <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>get direction</h1>
-          <hr className='mt-5 w-6 text- mx-auto items-center border-2 lg:mx-auto' />
-        </div>
+        <ScrollReveal>
+          <div>
+            <h1 className='text-3xl font-eb-garamond font-semibold capitalize'>get direction</h1>
+            <hr className='mt-5 w-6 text- mx-auto items-center border-2 lg:mx-auto' />
+          </div>
+        </ScrollReveal>
         {/* embedded link */}
-        <div className='text-center justify-center mx-auto mt-10 lg:px-52 lg:mt-10 mb-10 lg:mb-10 gap-2 lg:gap-1 lg:pb-10 pb-10'>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8529.392427774788!2d-0.3009868!3d5.7067147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfa0205c8a47a9%3A0x96835ac19d3c7dc!2sAmasaman!5e1!3m2!1sen!2sgh!4v1745943686241!5m2!1sen!2sgh"
-            width="100%"
-            height={450}
-            style={{ border: "0" }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Google Maps Embed - Amasaman"
-          />
-        </div>
+        <ScrollReveal>
+          <div className='text-center justify-center mx-auto mt-10 lg:px-52 lg:mt-10 mb-10 lg:mb-10 gap-2 lg:gap-1 lg:pb-10 pb-10'>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8529.392427774788!2d-0.3009868!3d5.7067147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfa0205c8a47a9%3A0x96835ac19d3c7dc!2sAmasaman!5e1!3m2!1sen!2sgh!4v1745943686241!5m2!1sen!2sgh"
+              width="100%"
+              height={450}
+              style={{ border: "0" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps Embed - Amasaman"
+            />
+          </div>
+        </ScrollReveal>
       </div>
       {/* Testimonials */}
-      <div className="w-full bg-gray-100 py-10 px-4 sm:px-10 lg:px-40 mb-5 lg:mb-10 bg-light-gray relative">
-        <h1 className="text-3xl font-eb-garamond font-semibold text-center capitalize">
-          What our customers say
-        </h1>
-        <hr className="mt-5 w-6 text-center mx-auto border-2" />
+      <ScrollReveal>
+        <div className="w-full bg-gray-100 py-10 px-4 sm:px-10 lg:px-40 mb-5 lg:mb-10 bg-light-gray relative">
+          <h1 className="text-3xl font-eb-garamond font-semibold text-center capitalize">
+            What our customers say
+          </h1>
+          <hr className="mt-5 w-6 text-center mx-auto border-2" />
 
-        {/* Scroll Buttons */}
-        <button
-          onClick={() => scroll("left")}
-          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md"
-        >
-          ◀
-        </button>
-        <button
-          onClick={() => scroll("right")}
-          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md"
-        >
-          ▶
-        </button>
+          {/* Scroll Buttons */}
+          <button
+            onClick={() => scroll("left")}
+            className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md"
+          >
+            ◀
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md"
+          >
+            ▶
+          </button>
 
-        <div
-          ref={scrollRef}
-          className="overflow-x-auto flex space-x-6 mt-10 px-2 no-scrollbar"
-        >
-          {[
-            {
-              name: "John Doe",
-              message: "Fantastic service! They installed our AC quickly and professionally.",
-              image: "../assets/home/user.jpg",
-            },
-            {
-              name: "Jane Smith",
-              message: "Reliable maintenance and very courteous technicians.",
-              image: "../assets/home/user-avatar.jpg",
-            },
-            {
-              name: "Michael Kafui",
-              message: "Great customer care and fast responses. Highly recommend!",
-              image: "../assets/home/user-avatar.jpg",
-            },
-            {
-              name: "Esther Fynn",
-              message: "Great products and AC installation.",
-              image: "../assets/home/user-avatar.jpg",
-            },
-            {
-              name: "Sampson Asare",
-              message: "Fast responds for maintainance and great service.",
-              image: "../assets/home/user-avatar.jpg",
-            },
-            {
-              name: "Peter Ntem",
-              message: "Great customer for my gas and oven repairs.",
-              image: "../assets/home/user-avatar.jpg",
-            },
-          ].map((testimonial, idx) => (
-            <div
-              key={idx}
-              className="min-w-[280px] max-w-sm bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center lg:mb-5 mb-5"
-            >
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-20 h-20 object-cover rounded-full mb-4 shadow-md"
-              />
-              <p className="text-sm italic text-gray-600 mb-4">"{testimonial.message}"</p>
-              <h4 className="font-semibold text-base">{testimonial.name}</h4>
-            </div>
-          ))}
+          <div
+            ref={scrollRef}
+            className="overflow-x-auto flex space-x-6 mt-10 px-2 no-scrollbar"
+          >
+            {[
+              {
+                name: "John Doe",
+                message: "Fantastic service! They installed our AC quickly and professionally.",
+                image: "../assets/home/user.jpg",
+              },
+              {
+                name: "Jane Smith",
+                message: "Reliable maintenance and very courteous technicians.",
+                image: "../assets/home/user-avatar.jpg",
+              },
+              {
+                name: "Michael Kafui",
+                message: "Great customer care and fast responses. Highly recommend!",
+                image: "../assets/home/user-avatar.jpg",
+              },
+              {
+                name: "Esther Fynn",
+                message: "Great products and AC installation.",
+                image: "../assets/home/user-avatar.jpg",
+              },
+              {
+                name: "Sampson Asare",
+                message: "Fast responds for maintainance and great service.",
+                image: "../assets/home/user-avatar.jpg",
+              },
+              {
+                name: "Peter Ntem",
+                message: "Great customer for my gas and oven repairs.",
+                image: "../assets/home/user-avatar.jpg",
+              },
+            ].map((testimonial, idx) => (
+              <div
+                key={idx}
+                className="min-w-[280px] max-w-sm bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center lg:mb-5 mb-5"
+              >
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="w-20 h-20 object-cover rounded-full mb-4 shadow-md"
+                />
+                <p className="text-sm italic text-gray-600 mb-4">"{testimonial.message}"</p>
+                <h4 className="font-semibold text-base">{testimonial.name}</h4>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </ScrollReveal>
       {/* footer */}
       <Footer />
     </div>

@@ -3,6 +3,7 @@ import { Preloader } from '../components/Preloader';
 import Navbar from '../components/Navbar';
 import '../styles/customCards.css';
 import Footer from '../components/Footer';
+import ScrollReveal from '../components/ScrollReveal';
 
 const Product = () => {
     return (
@@ -17,108 +18,120 @@ const Product = () => {
                 <div className="background">
                     <div className="centering">
                         <div className="articles">
-                            <article className='shadow'>
-                                <figure>
-                                    <img
-                                        src="./assets/products/airconditioner3.jpg"
-                                        alt="air conditioner"
-                                    />
-                                </figure>
-                                <div className="article-preview">
-                                    <div className='flex flex-row justify-between'>
-                                        <h3 className='text-2xl font-light capitalize'>hisense air conditioner</h3>
+                            <ScrollReveal>
+                                <article className='shadow'>
+                                    <figure>
+                                        <img
+                                            src="./assets/products/airconditioner3.jpg"
+                                            alt="air conditioner"
+                                        />
+                                    </figure>
+                                    <div className="article-preview">
+                                        <div className='flex flex-row justify-between'>
+                                            <h3 className='text-2xl font-light capitalize'>hisense air conditioner</h3>
+                                        </div>
+                                        <p className='text-sm mt-2 text-gray'>
+                                            Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), and energy-saving modes.
+                                            Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
+                                        </p>
                                     </div>
-                                    <p className='text-sm mt-2 text-gray'>
-                                    Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), and energy-saving modes.
-                                     Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
-                                    </p>
-                                </div>
-                            </article>
-                            <article className='shadow'>
-                                <figure>
-                                    <img
-                                        src="../assets/products/airconditioner2.jpg"
-                                        alt="air conditioner"
-                                    />
-                                </figure>
-                                <div className="article-preview">
-                                    <div className='flex flex-row justify-between'>
-                                        <h3 className='text-2xl font-light capitalize'>Nasco air conditioner</h3>
+                                </article>
+                            </ScrollReveal>
+                            <ScrollReveal>
+                                <article className='shadow'>
+                                    <figure>
+                                        <img
+                                            src="../assets/products/airconditioner2.jpg"
+                                            alt="air conditioner"
+                                        />
+                                    </figure>
+                                    <div className="article-preview">
+                                        <div className='flex flex-row justify-between'>
+                                            <h3 className='text-2xl font-light capitalize'>Nasco air conditioner</h3>
+                                        </div>
+                                        <p className='text-sm mt-2 text-gray'>
+                                            Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only),
+                                            and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
+                                        </p>
                                     </div>
-                                    <p className='text-sm mt-2 text-gray'>
-                                        Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), 
-                                        and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
-                                    </p>
-                                </div>
-                            </article>
-                            <article className='shadow'>
-                                <figure>
-                                    <img
-                                        src="./assets/products/airconditioner3.jpg"
-                                        alt="air conditioner"
-                                    />
-                                </figure>
-                                <div className="article-preview">
-                                    <div className='flex flex-row justify-between'>
-                                        <h3 className='text-2xl font-light capitalize'>TCL air conditioner</h3>
+                                </article>
+                            </ScrollReveal>
+                            <ScrollReveal>
+                                <article className='shadow'>
+                                    <figure>
+                                        <img
+                                            src="./assets/products/airconditioner3.jpg"
+                                            alt="air conditioner"
+                                        />
+                                    </figure>
+                                    <div className="article-preview">
+                                        <div className='flex flex-row justify-between'>
+                                            <h3 className='text-2xl font-light capitalize'>TCL air conditioner</h3>
+                                        </div>
+                                        <p className='text-sm mt-2 text-gray'>
+                                            Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only),
+                                            and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
+                                        </p>
                                     </div>
-                                    <p className='text-sm mt-2 text-gray'>
-                                        Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), 
-                                        and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
-                                    </p>
-                                </div>
-                            </article>
-                            <article className='shadow'>
-                                <figure>
-                                    <img
-                                        src="../assets/products/airconditioner2.jpg"
-                                        alt="air conditioner"
-                                    />
-                                </figure>
-                                <div className="article-preview">
-                                    <div className='flex flex-row justify-between'>
-                                        <h3 className='text-2xl font-light capitalize'>Bruhm air conditioner</h3>
+                                </article>
+                            </ScrollReveal>
+                            <ScrollReveal>
+                                <article className='shadow'>
+                                    <figure>
+                                        <img
+                                            src="../assets/products/airconditioner2.jpg"
+                                            alt="air conditioner"
+                                        />
+                                    </figure>
+                                    <div className="article-preview">
+                                        <div className='flex flex-row justify-between'>
+                                            <h3 className='text-2xl font-light capitalize'>Bruhm air conditioner</h3>
+                                        </div>
+                                        <p className='text-sm mt-2 text-gray'>
+                                            Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only),
+                                            and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
+                                        </p>
                                     </div>
-                                    <p className='text-sm mt-2 text-gray'>
-                                        Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), 
-                                        and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
-                                    </p>
-                                </div>
-                            </article>
-                            <article className='shadow'>
-                                <figure>
-                                    <img
-                                        src="./assets/products/airconditioner3.jpg"
-                                        alt="air conditioner"
-                                    />
-                                </figure>
-                                <div className="article-preview">
-                                    <div className='flex flex-row justify-between'>
-                                        <h3 className='text-2xl font-light capitalize'>Midea air conditioner</h3>
+                                </article>
+                            </ScrollReveal>
+                            <ScrollReveal>
+                                <article className='shadow'>
+                                    <figure>
+                                        <img
+                                            src="./assets/products/airconditioner3.jpg"
+                                            alt="air conditioner"
+                                        />
+                                    </figure>
+                                    <div className="article-preview">
+                                        <div className='flex flex-row justify-between'>
+                                            <h3 className='text-2xl font-light capitalize'>Midea air conditioner</h3>
+                                        </div>
+                                        <p className='text-sm mt-2 text-gray'>
+                                            Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only),
+                                            and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
+                                        </p>
                                     </div>
-                                    <p className='text-sm mt-2 text-gray'>
-                                        Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), 
-                                        and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
-                                    </p>
-                                </div>
-                            </article>
-                            <article className='shadow'>
-                                <figure>
-                                    <img
-                                        src="../assets/products/airconditioner2.jpg"
-                                        alt="air conditioner"
-                                    />
-                                </figure>
-                                <div className="article-preview">
-                                    <div className='flex flex-row justify-between'>
-                                        <h3 className='text-2xl font-light capitalize'>LG air conditioner</h3>
+                                </article>
+                            </ScrollReveal>
+                            <ScrollReveal>
+                                <article className='shadow'>
+                                    <figure>
+                                        <img
+                                            src="../assets/products/airconditioner2.jpg"
+                                            alt="air conditioner"
+                                        />
+                                    </figure>
+                                    <div className="article-preview">
+                                        <div className='flex flex-row justify-between'>
+                                            <h3 className='text-2xl font-light capitalize'>LG air conditioner</h3>
+                                        </div>
+                                        <p className='text-sm mt-2 text-gray'>
+                                            Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only),
+                                            and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
+                                        </p>
                                     </div>
-                                    <p className='text-sm mt-2 text-gray'>
-                                        Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), 
-                                        and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
-                                    </p>
-                                </div>
-                            </article>
+                                </article>
+                            </ScrollReveal>
                         </div>
                     </div>
                 </div>
