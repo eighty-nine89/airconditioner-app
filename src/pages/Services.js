@@ -4,9 +4,8 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { TbAirConditioning } from 'react-icons/tb';
 import { BsFan } from 'react-icons/bs';
-import { LuHeater } from 'react-icons/lu';
+import { LuHeater, LuRefrigerator } from 'react-icons/lu';
 import { PiPipeLight, PiToolboxDuotone } from 'react-icons/pi';
-import { MdHeatPump } from 'react-icons/md';
 
 const Services = () => {
     return (
@@ -23,63 +22,71 @@ const Services = () => {
                 <div className="flex flex-col lg:flex-row justify-center items-center text-center w-full h-full lg:gap-10 gap-5 mt-10">
                     <div className='flex flex-col lg:flex-col items-center lg:gap-5 gap-5 text-lg capitalize'>
                         <TbAirConditioning className='text-6xl text-gray hover:text-black' />
-                        <p className='text-center capitalize'>air condition repair</p>
+                        <p className='text-center capitalize'>air condition sales and repair</p>
                         <p className='text-justify lg:text-sm text-sm tracking-tight text-gray'>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
+                            We provide a wide selection of high-performance air conditioning units for homes and businesses. Our repair services cover all major brands, resolving issues like cooling inefficiency,
+                            refrigerant leaks, and mechanical failures to keep your system running smoothly.
                         </p>
                     </div>
                     <div className='flex flex-col lg:flex-col items-center lg:gap-5 gap-5 text-lg  capitalize'>
                         <BsFan className='text-6xl text-gray hover:text-black' />
-                        <p className='text-center capitalize'>fan motor replacement</p>
+                        <p className='text-center capitalize'>Rewinding of all kind of motors</p>
                         <p className='text-justify lg:text-sm text-sm tracking-tight text-gray'>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
+                            We offer expert rewinding services for all types of electric motors, including fan motors, pump motors, and industrial units. Our precise rewinding restores motor efficiency,
+                            extends lifespan, and reduces the need for costly replacements.
                         </p>
                     </div>
                     <div className='flex flex-col lg:flex-col items-center lg:gap-5 gap-5 text-lg capitalize'>
                         <LuHeater className='text-6xl text-gray hover:text-black' />
-                        <p className='text-center capitalize'>heater repair</p>
+                        <p className='text-center capitalize'>Gas and electric Oven repairs</p>
                         <p className='text-justify lg:text-sm text-sm tracking-tight text-gray'>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
+                            Our technicians repair all models of gas and electric ovens, tackling common problems such as uneven heating, ignition faults,
+                            and control issues. We ensure your oven operates safely and efficiently for everyday cooking needs.
                         </p>
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row justify-center items-center w-full h-full lg:gap-5 gap-5">
                     <div className='flex flex-col lg:flex-col items-center lg:gap-5 gap-5 text-lg capitalize'>
                         <PiToolboxDuotone className='text-6xl text-gray hover:text-black' />
-                        <p className='text-center capitalize'>system installation</p>
+                        <p className='text-center capitalize'>system installation and maintainance</p>
                         <p className='text-justify lg:text-sm text-sm tracking-tight text-gray'>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
+                            We specialize in full HVAC system installations, ensuring optimal configuration for energy efficiency and comfort. Regular maintenance services include inspections, cleaning,
+                            and performance checks to extend the system's life and prevent breakdowns.
                         </p>
                     </div>
                     <div className='flex flex-col lg:flex-col items-center lg:gap-5 gap-5 text-lg capitalize'>
-                        <MdHeatPump className='text-6xl text-gray hover:text-black' />
-                        <p className='text-center capitalize'>heat pump repair</p>
+                        <LuRefrigerator className='text-6xl text-gray hover:text-black' />
+                        <p className='text-center capitalize'>refrigerator reparation</p>
                         <p className='text-justify lg:text-sm text-sm tracking-tight text-gray'>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
+                            Our refrigerator repair service addresses issues like inadequate cooling, compressor problems, thermostat faults, and gas leaks. We service all major makes
+                            and models to ensure reliable, energy-efficient performance.
                         </p>
                     </div>
                     <div className='flex flex-col lg:flex-col items-center lg:gap-5 gap-5 text-lg capitalize'>
                         <PiPipeLight className='text-6xl text-gray hover:text-black' />
-                        <p className='text-center capitalize'>duct cleaning and repair</p>
+                        <p className='text-center capitalize'>Laying of air conditoin pipes</p>
                         <p className='text-justify lg:text-sm text-sm tracking-tight text-gray'>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.
+                            We professionally install and lay AC piping for both new setups and system upgrades. Proper piping ensures effective refrigerant flow,
+                            leak prevention, and long-term performance of your air conditioning unit.
                         </p>
                     </div>
                 </div>
             </div>
-            <Footer/>
+            {/* our work */}
+            <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:px-52 xl:px-80 mx-auto'>
+                <div className='text-center'>
+                    <h1 className='text-3xl font-eb-garamond font-semibold capitalize'><span className="text-gray">watch:</span> our  work</h1>
+                    <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
+                </div>
+            </div>
+            {/* video */}
+            <div className='backgroundImg mt-16 mb-16 px-4 sm:px-10 lg:px-32 xl:px-80'>
+                <video className='w-full h-auto rounded-lg shadow-md' controls loop>
+                    <source src="../assets/video/acvideo2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <Footer />
         </div>
     )
 }

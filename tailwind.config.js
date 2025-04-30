@@ -4,7 +4,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        slide: 'slide 30s linear infinite',
+      },
+      keyframes: {
+        slide: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' }, // Adjust for loop
+        },
+      },
+    },
     colors:{
       'white' : 'white',
       'black' : 'black',
@@ -12,6 +22,8 @@ module.exports = {
       'light-gray' : '#F5F5F5',
       'dark-gray' : '#333333',
       'red' : '#FF0000',
+      'green' : '#008000',
+      'blue' : '#0000FF',
     },
     fontFamily: {
       'Lora': ['Lora', 'serif'],
@@ -20,7 +32,8 @@ module.exports = {
       'nautigal': ['The Nautigal', 'cursive'],
       "pt-serif": ['PT Serif', 'serif'],
       "eb-garamond": ['EB Garamond', 'serif'],
-    }
+    },
+    
   },
   plugins: [],
 }

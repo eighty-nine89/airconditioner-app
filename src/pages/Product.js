@@ -29,10 +29,9 @@ const Product = () => {
                                         <h3 className='text-2xl font-light capitalize'>hisense air conditioner</h3>
                                     </div>
                                     <p className='text-sm mt-2 text-gray'>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Praesent in mauris eu tortor porttitor accumsan.
+                                    Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), and energy-saving modes.
+                                     Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
                                     </p>
-                                    <p className='priceTag text-center mt-2 text-4xl'>₵ 4180.<span className='text-xs'>00</span></p>
                                 </div>
                             </article>
                             <article className='shadow'>
@@ -47,10 +46,9 @@ const Product = () => {
                                         <h3 className='text-2xl font-light capitalize'>Nasco air conditioner</h3>
                                     </div>
                                     <p className='text-sm mt-2 text-gray'>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Praesent in mauris eu tortor porttitor accumsan.
+                                        Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), 
+                                        and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
                                     </p>
-                                    <p className='priceTag text-center mt-2 text-4xl'>₵ 3580.<span className='text-xs'>00</span></p>
                                 </div>
                             </article>
                             <article className='shadow'>
@@ -62,13 +60,12 @@ const Product = () => {
                                 </figure>
                                 <div className="article-preview">
                                     <div className='flex flex-row justify-between'>
-                                        <h3 className='text-2xl font-light capitalize'>hisense air conditioner</h3>
+                                        <h3 className='text-2xl font-light capitalize'>TCL air conditioner</h3>
                                     </div>
                                     <p className='text-sm mt-2 text-gray'>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Praesent in mauris eu tortor porttitor accumsan.
+                                        Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), 
+                                        and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
                                     </p>
-                                    <p className='priceTag text-center mt-2 text-4xl'>₵ 4180.<span className='text-xs'>00</span></p>
                                 </div>
                             </article>
                             <article className='shadow'>
@@ -80,13 +77,12 @@ const Product = () => {
                                 </figure>
                                 <div className="article-preview">
                                     <div className='flex flex-row justify-between'>
-                                        <h3 className='text-2xl font-light capitalize'>Nasco air conditioner</h3>
+                                        <h3 className='text-2xl font-light capitalize'>Bruhm air conditioner</h3>
                                     </div>
                                     <p className='text-sm mt-2 text-gray'>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Praesent in mauris eu tortor porttitor accumsan.
+                                        Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), 
+                                        and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
                                     </p>
-                                    <p className='priceTag text-center mt-2 text-4xl'>₵ 3580.<span className='text-xs'>00</span></p>
                                 </div>
                             </article>
                             <article className='shadow'>
@@ -98,13 +94,12 @@ const Product = () => {
                                 </figure>
                                 <div className="article-preview">
                                     <div className='flex flex-row justify-between'>
-                                        <h3 className='text-2xl font-light capitalize'>hisense air conditioner</h3>
+                                        <h3 className='text-2xl font-light capitalize'>Midea air conditioner</h3>
                                     </div>
                                     <p className='text-sm mt-2 text-gray'>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Praesent in mauris eu tortor porttitor accumsan.
+                                        Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), 
+                                        and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
                                     </p>
-                                    <p className='priceTag text-center mt-2 text-4xl'>₵ 4180.<span className='text-xs'>00</span></p>
                                 </div>
                             </article>
                             <article className='shadow'>
@@ -116,13 +111,12 @@ const Product = () => {
                                 </figure>
                                 <div className="article-preview">
                                     <div className='flex flex-row justify-between'>
-                                        <h3 className='text-2xl font-light capitalize'>Nasco air conditioner</h3>
+                                        <h3 className='text-2xl font-light capitalize'>LG air conditioner</h3>
                                     </div>
                                     <p className='text-sm mt-2 text-gray'>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Praesent in mauris eu tortor porttitor accumsan.
+                                        Air conditioning sales focus on providing cooling comfort, with features like adjustable temperatures, multiple operating modes (cool, heat, dry, fan only), 
+                                        and energy-saving modes. Smart ACs offer additional convenience through mobile app control, voice commands, and integration with smart home systems
                                     </p>
-                                    <p className='priceTag text-center mt-2 text-4xl'>₵ 3580.<span className='text-xs'>00</span></p>
                                 </div>
                             </article>
                         </div>

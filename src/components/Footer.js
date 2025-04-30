@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaStore } from 'react-icons/fa6';
+import { TbAirConditioning } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -9,11 +9,11 @@ const Footer = () => {
                 <div className='flex flex-col mt-5 text-sm lg:items-start items-center'>
                     <div className='lg:mx-auto lg:items-start text-center'>
                         <Link to="/" className='flex flex-row gap-2 items-center'>
-                            <FaStore className="w-fit text-2xl my-auto" />
-                            <h4 className='text-lg uppercase font-light font-pt-serif text-center text-decoration-none'>Air conditioner store</h4>
+                            <TbAirConditioning className="w-fit text-2xl my-auto" />
+                            <h4 className='text-lg uppercase font-light font-pt-serif text-center text-decoration-none'>MegaTech Cooling Services</h4>
                         </Link>
                     </div>
-                    <p className='font-light text-center'>Est. in 2022</p>
+                    <p className='font-light lg:text-center text-xl font-dancingScript'>MegaTech, Cooling Time..</p>
                 </div>
                 <div className='items-center text-center mt-5'>
                     <ul className='flex flex-col gap-4 lg:gap-4 whitespace-nowrap font-light text-sm'>
@@ -33,14 +33,15 @@ const Footer = () => {
                 </div>
                 <div className='items-center text-center mt-5'>
                     <ul className='flex flex-col gap-4 lg:gap-4 whitespace-nowrap font-light text-sm'>
+                        <Link to="/gallery"><li className='hover:text-black text-dark-gray capitalize'>Gallery</li></Link>
                         <Link to="/faqs"><li className='hover:text-black text-dark-gray capitalize'>FAQs</li></Link>
-                        <Link to="/deliverypolicy"><li className='hover:text-black text-dark-gray capitalize'>Delivery & Return Policy</li></Link>
+                        <Link to="/deliverypolicy"><li className='hover:text-black text-dark-gray capitalize'>Delivery & service policy</li></Link>
                         <Link to="/storepolicy"><li className='hover:text-black text-dark-gray capitalize'>Store Policy</li></Link>
-                        <Link to="/storepolicy"><li className='hover:text-black text-dark-gray capitalize'>Payment Methods</li></Link>
                     </ul>
                 </div>
                 <div className='items-center text-start mt-5 w-full lg:w-auto'>
                     <h4 className='font-bold text-xl tracking-wider lg:text-start text-center'>Join Us!</h4>
+                    <p className='text-sm lg:text-sm text-center text-gray'>subscribe to our newstletter</p>
                     <form>
                         <div className='flex flex-col mt-2 font-light text-sm'>
                             <label htmlFor='email'>Email<span className='text-red'>*</span></label>

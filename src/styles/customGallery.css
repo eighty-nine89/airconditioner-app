@@ -33,3 +33,12 @@
     cursor: pointer;
     border-radius: 8px;
 }
+/* testimonial */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  

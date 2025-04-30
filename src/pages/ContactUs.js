@@ -28,27 +28,27 @@ const ContactUs = () => {
                 </div>
                 <div className='justify-between flex flex-col lg:flex-row text-center mt-16 gap-10'>
                 <div className='font-light'>
-                        <h4 className='text-lg lg:text-2xl italic text-gray hover:text-black font-medium font-pt-serif'>Main Store</h4>
-                        <p className='mt-1 capitalize'>89 Mango Avenue St.</p>
-                        <p className='capitalize'>Mempeasem,east legon , Accra.</p>
+                        <h4 className='text-lg lg:text-xl italic text-gray hover:text-black font-medium font-pt-serif'>Main Store</h4>
+                        <p className='mt-1 capitalize text-sm'>St. Peters Catholic Church</p>
+                        <p className='capitalize text-sm'>Adjen Kotoku, Amasaman, Accra</p>
                     </div>
 
                     <div className='font-light lg:ml-28'>
-                        <h4 className='text-xl lg:text-2xl italic text-gray hover:text-black font-medium font-pt-serif'>Opening Hours</h4>
-                        <p className='mt-1 capitalize'>Monday - Saturday</p>
-                        <p className='capitalize'>9:00am - 7:00pm GMT</p>
+                        <h4 className='text-xl lg:text-xl italic text-gray hover:text-black font-medium font-pt-serif'>Opening Hours</h4>
+                        <p className='mt-1 capitalize text-sm'>Monday - Saturday</p>
+                        <p className='capitalize text-sm'>9:00am - 7:00pm GMT</p>
                     </div>
 
                     <div className='font-light mb-16'>
-                        <h4 className='text-xl lg:text-2xl italic text-gray hover:text-black font-medium font-pt-serif capitalize'>Contact Us</h4>
-                        <p className='mt-1 capitalize'>Phone: +233 00000000 | +233 00000000</p>
-                        <p>Email: airconditionservices@email.com</p>
+                        <h4 className='text-xl lg:text-xl italic text-gray hover:text-black font-medium font-pt-serif capitalize'>Contact Us</h4>
+                        <p className='mt-1 capitalize text-sm'>Phone: +233 0244523845 or +233 0201588787</p>
+                        <p className='text-sm'>Email: megatectcoolingservices@gmail.com</p>
                     </div>
                 </div>
                 <div className='flex flex-col justify-center text-center'>
                     <div className='font-light'>
                         <h4 className='text-xl lg:text-2xl font-medium text-gray hover:text-black italic font-pt-serif capitalize'>Inquiries</h4>
-                        <p className='mt-1 text-sm'>For questions regarding our products and services you can contact us <br /> by filling out the forms below.</p>
+                        <p className='mt-1 text-sm'>For services qoutes and questions regarding our products and services you can contact us <br /> by filling out the forms below.</p>
                     </div>
                 </div>
                 <form className='mt-10 w-full sm:w-3/4 lg:w-1/2 mx-auto'>

@@ -8,6 +8,7 @@ import Faqs from './pages/Faqs';
 import Storepolicy from './pages/Storepolicy';
 import Deliverypolicy from './pages/Deliverypolicy';
 import Services from './pages/Services';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/faqs' element={<Faqs/>}/>
         <Route path='/storepolicy' element={<Storepolicy/>}/>
         <Route path='/deliverypolicy' element={<Deliverypolicy/>}/>
+        <Route path='/gallery' element={<Gallery/>}/>
       </Routes>
       </>
     </div>
