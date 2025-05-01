@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import ScrollReveal from '../components/ScrollReveal';
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Gallery from '../components/Gallery';
 
 const About = () => {
     return (
@@ -145,27 +146,7 @@ const About = () => {
                 </div>
             </ScrollReveal>
             {/* gallery */}
-            <ScrollReveal>
-                <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:px-52 xl:px-80 mx-auto'>
-                    <div className='text-center lg:mt-5 mt-5'>
-                        <h1 className='text-2xl font-pt-serif font-light capitalize'>our gallery</h1>
-                        <hr className='mt-2 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
-                    </div>
-                </div>
-            </ScrollReveal>
-            <ScrollReveal>
-                <div className='backgroundImg mt-16 mb-16 px-4 sm:px-10 lg:px-32 xl:px-80'>
-                    <div className='gallery grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
-                        {["mega1.jpg", "refrigerator.jpg", "gasrepair.jpg", "ac1.avif", "acrepairs.jpg"].map((img, index) => (
-                            <div className='cardImg' key={index}>
-                                <figure>
-                                    <img src={`../assets/gallery/${img}`} alt='Preview' className='w-full h-auto rounded-lg shadow-md' />
-                                </figure>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </ScrollReveal>
+            <Gallery />
             {/* clients */}
             <div className="mt-5 px-4 lg:px-52">
                 <ScrollReveal>
