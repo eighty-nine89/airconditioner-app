@@ -3,6 +3,8 @@ import { Preloader } from '../components/Preloader';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ScrollReveal from '../components/ScrollReveal';
+import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -44,35 +46,55 @@ const About = () => {
                         MEGATECH COOLING SERVICES is committed to the principle of coordination and of providing all our clients with management
                         services/products, ensuring the coordination of team work skills we achieve by:
                         Assisting the client to meet contract specifications
-                        Quality and culinary delivery at the heart of the founder <span className='font-semibold'>(John Kwasi Ameyaw)</span> and would obviously ensure proper control
+                        Quality and culinary delivery at the heart of the founder <span className='font-semibold'>(John Kwasi Amegadje)</span> and would obviously ensure proper control
                         over his work to enhance his credibility and reputation.
                     </p>
-                    <table className='mt-10 w-full border-2 border-gray'>
-                        <thead className='mt-10'>
-                            <tr className='text-center'>
-                                <th className='border-2 border-gray p-2'>Name</th>
-                                <th className='border-2 border-gray p-2'>Position (Specification)</th>
-                            </tr>
-                        </thead>
-                        <tbody className='text-center'>
-                            <tr className='border-2 border-gray p-2'>
-                                <td className='border-2 border-gray p-2'>John Kwasi Amegadje</td>
-                                <td className='border-2 border-gray p-2'>GM / Chief Engineer</td>
-                            </tr>
-                            <tr className='border-2 border-gray p-2'>
-                                <td className='border-2 border-gray p-2'>Emmanuel K. Somabe</td>
-                                <td className='border-2 border-gray p-2'>Gas and electric cookers, Refrigeration, AC Technician</td>
-                            </tr>
-                            <tr className='border-2 border-gray p-2'>
-                                <td className='border-2 border-gray p-2'>Tawia Augustine</td>
-                                <td className='border-2 border-gray p-2'>Project Manager</td>
-                            </tr>
-                            <tr className='border-2 border-gray p-2'>
-                                <td className='border-2 border-gray p-2'>Kwame Adom Isaac</td>
-                                <td className='border-2 border-gray p-2'>Workshop and site manager</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    {/* affiliate workforce */}
+                    <div className='mt-10 lg:mb-10 mb-10 px-4 sm:px-10 lg:px-32 xl:px-5 font-pt-serif text-center'>
+                        <div className='flex flex-col lg:flex-row gap-6 justify-center items-stretch'>
+                            {[
+                                {
+                                    name: "John Kwasi Amegadje",
+                                    position: "GM / Chief Engineer",
+                                    img: "../assets/home/user-avatar.jpg"
+                                },
+                                {
+                                    name: "Emmanuel K. Somabe",
+                                    position: "Gas and electric cookers, Refrigeration, AC Technician",
+                                    img: "../assets/home/user-avatar.jpg"
+                                },
+                                {
+                                    name: "Tawia Augustine",
+                                    position: "Project Manager",
+                                    img: "../assets/home/user-avatar.jpg"
+                                },
+                                {
+                                    name: "Kwame Adom Isaac",
+                                    position: "Workshop and site manager",
+                                    img: "../assets/home/user-avatar.jpg"
+                                },
+                            ].map((member, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-white lg:w-full shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex flex-col items-center w-full sm:w-[22rem] lg:flex-1"
+                                >
+                                    <img
+                                        src={member.img}
+                                        alt={member.name}
+                                        className="w-24 h-24 rounded-full object-cover mb-4 shadow-md"
+                                    />
+                                    <h3 className="text-lg font-light font-pt-serif text-black mb-1">{member.name}</h3>
+                                    <p className="text-sm text-gray mb-3">{member.position}</p>
+                                    <div className="flex space-x-4 text-gray-500 text-md">
+                                        <Link to={" "} className="text-gray hover:text-black transition"><FaFacebookF /></Link>
+                                        <Link to={" "} className="text-gray hover:text-black transition"><FaWhatsapp /></Link>
+                                        <Link to={" "} className="text-gray hover:text-black transition"><FaLinkedinIn /></Link>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
                 </div>
             </ScrollReveal>
             {/* vission and mission */}

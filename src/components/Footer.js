@@ -42,7 +42,7 @@ const Footer = () => {
                 <div className='items-center text-start mt-5 w-full lg:w-auto'>
                     <h4 className='font-bold text-xl tracking-wider lg:text-start text-center'>Join Us!</h4>
                     <p className='text-sm lg:text-sm text-center text-gray'>subscribe to our newstletter</p>
-                    <form>
+                    <form action={'https://formsubmit.co/megatechcoolingservicesgh@gmail.com'} method='POST'>
                         <div className='flex flex-col mt-2 font-light text-sm'>
                             <label htmlFor='email'>Email<span className='text-red'>*</span></label>
                             <input
@@ -61,7 +61,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='text-center w-full mt-4 text-xs bg-light-gray p-3 font-light'>
-                <p>&copy;2025 by Air conditioner store. All rights Reserved. Developed by <span className='underline hover:text-accent'><a href=' ' target='_blank' rel='noreferrer'>eightynineDev</a></span></p>
+                <p>&copy;2025 by Air conditioner store. All rights Reserved. Developed by <span className='underline hover:text-gray'><Link to={"/"}>eightynineDev</Link></span></p>
             </div>
         </div>
     )

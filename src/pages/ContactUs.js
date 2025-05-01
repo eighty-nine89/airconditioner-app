@@ -49,7 +49,7 @@ const ContactUs = () => {
                         <div className='font-light mb-16'>
                             <h4 className='text-xl lg:text-xl italic text-gray hover:text-black font-medium font-pt-serif capitalize'>Contact Us</h4>
                             <p className='mt-1 capitalize text-sm'>Phone: +233 0244523845 or +233 0201588787</p>
-                            <p className='text-sm'>Email: megatectcoolingservices@gmail.com</p>
+                            <p className='text-sm' onClick={() => window.location.href = 'mailto:megatechcoolingservicesgh@gmail.com'}>Email: megatechcoolingservicesgh@gmail.com</p>
                         </div>
                     </div>
                 </ScrollReveal>
@@ -62,7 +62,7 @@ const ContactUs = () => {
                     </div>
                 </ScrollReveal>
                 <ScrollReveal>
-                    <form className='mt-10 w-full sm:w-3/4 lg:w-1/2 mx-auto'>
+                    <form action={'https://formsubmit.co/megatechcoolingservicesgh@gmail.com'} method='POST' className='mt-10 w-full sm:w-3/4 lg:w-1/2 mx-auto'>
 
                         {/* Full Name */}
                         <div className='flex flex-col font-light'>

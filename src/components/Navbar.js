@@ -91,8 +91,8 @@ const Navbar = () => {
                             <span className='font-bold'>Phone:</span> +233 0244523845 or +233 0201588787
                         </h4>
                         {/* email */}
-                        <h4 className="text-xs text-center lg:visible invisible font-light text-black my-2 lg:my-auto">
-                            <span className='font-bold'>Email: </span>megatectcoolingservices@gmail.com
+                        <h4 className="text-xs text-center lg:visible invisible font-light text-black my-2 lg:my-auto" onClick={() => window.location.href = 'mailto:megatechcoolingservicesgh@gmail.com'}>
+                            <span className='font-bold'>Email: </span>megatechcoolingservicesgh@gmail.com
                         </h4>
                     </div>
                     {/* Open Hours and Social Media */}

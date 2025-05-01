@@ -62,7 +62,7 @@ const Home = () => {
           <ScrollReveal>
             <div className='flex flex-col lg:flex-row justify-center items-center flex-1 w-full h-full mx-auto mt-10 lg:px-0 lg:mt-10 gap-5 lg:gap-10'>
               <div className='otherProduct'>
-                <img src='../assets/ourservices/acrepairs.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+                <img src='../assets/ourservices/acrepairs.jpg' alt='air condition' className='w-full h-48 object-cover transform hover:scale-105 transition duration-500 ease-in-out rounded-xl shadow-lg' />
                 <p className='text-gray text-base capitalize mt-2'>Air condtioner sales & Installation</p>
                 <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
                   We offer a wide range of high-quality air conditioning units suitable for both residential and commercial use. Our expert technicians ensure seamless installation,
@@ -71,7 +71,7 @@ const Home = () => {
 
               </div>
               <div className='otherProduct'>
-                <img src='../assets/ourservices/openac.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+                <img src='../assets/ourservices/openac.jpg' alt='air condition' className='w-full h-48 object-cover transform hover:scale-105 transition duration-500 ease-in-out rounded-xl shadow-lg' />
                 <p className='text-base text-gray capitalize mt-2'>General Maintainance Services</p>
                 <p className='text-justify tracking-tighter mt-2 font-light text-sm capitalize'>
                   Our general maintenance services cover routine inspections, cleaning, and minor repairs for home and commercial appliances. Regular
@@ -79,7 +79,7 @@ const Home = () => {
                 </p>
               </div>
               <div className='otherProduct'>
-                <img src='../assets/ourservices/gasrepair.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+                <img src='../assets/ourservices/gasrepair.jpg' alt='air condition' className='w-full h-48 object-cover transform hover:scale-105 transition duration-500 ease-in-out rounded-xl shadow-lg' />
                 <p className='text-gray text-base capitalize mt-2'>Reparation of Gas & Electric Ovens</p>
                 <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
                   We specialize in diagnosing and repairing faults in both gas and electric ovens. Whether it’s a malfunctioning heating element, ignition issue, or control panel fault,
@@ -87,7 +87,7 @@ const Home = () => {
                 </p>
               </div>
               <div className='otherProduct'>
-                <img src='../assets/ourservices/refrigerator.jpg' alt='air condition' className='w-full h-48 object-cover rounded-3xl shadow-lg' />
+                <img src='../assets/ourservices/refrigerator.jpg' alt='air condition' className='w-full h-48 object-cover transform hover:scale-105 transition duration-500 ease-in-out rounded-xl shadow-lg' />
                 <p className='text-gray text-base capitalize mt-2'>refrigerator repairs</p>
                 <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
                   Our refrigerator repair service addresses issues such as poor cooling, unusual noises, compressor faults, and gas leaks. We handle repairs for all
@@ -188,7 +188,7 @@ const Home = () => {
           </div>
         </div>
       </ScrollReveal>
-      <ScrollReveal>
+      <ScrollReveal animationClass="animate-slide-left" threshold={0.2} delay={300}>
         <div className='backgroundImg mt-16 mb-16 px-4 sm:px-10 lg:px-32 xl:px-80'>
           <div className='gallery grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
             {["mega1.jpg", "refrigerator.jpg", "gasrepair.jpg", "ac1.avif", "acrepairs.jpg", "openac.jpg"].map((img, index) => (
@@ -265,8 +265,8 @@ const Home = () => {
                   <MdOutlineEmail className='text-3xl text-gray hover:text-black' />
                 </div>
                 <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> general enquires</h3>
-                <p className='whitespace-nowrap lg:text-base'>
-                  megatectcoolingservices@gmail.com
+                <p className='whitespace-nowrap lg:text-base' onClick={() => window.location.href = 'mailto:megatechcoolingservicesgh@gmail.com'}>
+                  megatechcoolingservicesgh@gmail.com
                 </p>
               </div>
             </div>
@@ -307,7 +307,7 @@ const Home = () => {
           </div>
         </ScrollReveal>
         {/* embedded link */}
-        <ScrollReveal>
+        <ScrollReveal animationClass="animate-slide-left" threshold={0.2} delay={300}>
           <div className='text-center justify-center mx-auto mt-10 lg:px-52 lg:mt-10 mb-10 lg:mb-10 gap-2 lg:gap-1 lg:pb-10 pb-10'>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8529.392427774788!2d-0.3009868!3d5.7067147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfa0205c8a47a9%3A0x96835ac19d3c7dc!2sAmasaman!5e1!3m2!1sen!2sgh!4v1745943686241!5m2!1sen!2sgh"

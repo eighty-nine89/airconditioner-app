@@ -1,2 +1,8 @@
 MegaTech Cooling Services Information
 
+google Email
+-name: MegaTech Cooling Services
+-DOB: Jan, 01, 2000
+-Gender: Male
+-email: megatechcoolingservicesgh@gmail.com
+-password: happySunri$e2000
