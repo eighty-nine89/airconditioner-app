@@ -7,12 +7,52 @@ import { BsFan } from 'react-icons/bs';
 import { LuHeater, LuRefrigerator } from 'react-icons/lu';
 import { PiPipeLight, PiToolboxDuotone } from 'react-icons/pi';
 import ScrollReveal from '../components/ScrollReveal';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Services = () => {
     return (
         <div className='Services cursor-pointer'>
             <Preloader />
             <Navbar />
+            {/* Sticky Social Media Bar */}
+            <ScrollReveal animationClass="animate-fade-in" threshold={0.5}>
+                <div className="fixed top-1/2 right-4 transform -translate-y-1/2 flex flex-col gap-4 z-50">
+                    <Link to={' '}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-fbcolor hover:bg-fbcolor text-white rounded-full p-2 transition hover:scale-110 duration-500 transform ease-in-out"
+                        aria-label="Facebook"
+                    >
+                        <FaFacebook size={26} />
+                    </Link>
+                    <Link to={' '}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-black hover:bg-black text-white rounded-full p-2 transition hover:scale-110 duration-500 transform ease-in-out"
+                        aria-label="Twitter"
+                    >
+                        <FaXTwitter size={26} />
+                    </Link>
+                    <Link to={' '}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-insta-color hover:bg-insta-color text-white rounded-full p-2 transition hover:scale-110 duration-500 transform ease-in-out"
+                        aria-label="Instagram"
+                    >
+                        <FaInstagram size={26} />
+                    </Link>
+                    <Link to={' '}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-whatsapp-color hover:bg-whatsapp-color text-white rounded-full p-2 transition hover:scale-110 duration-500 transform ease-in-out"
+                        aria-label="WhatsApp"
+                    >
+                        <FaWhatsapp size={26} />
+                    </Link>
+                </div>
+            </ScrollReveal>
             {/* service title */}
             <ScrollReveal>
                 <div className='text-center font-light font-pt-serif text-2xl sm:text-3xl lg:text-3xl tracking-widest mt-10 px-4 sm:px-10 lg:px-32 xl:px-80 mx-auto capitalize'>

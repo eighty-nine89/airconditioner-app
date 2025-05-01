@@ -39,6 +39,9 @@ module.exports = {
       'red': '#FF0000',
       'green': '#008000',
       'blue': '#0000FF',
+      'fbcolor': '#1877F2',
+      'insta-color': '#E1306C',
+      'whatsapp-color': '#25D366',
     },
     fontFamily: {
       'Lora': ['Lora', 'serif'],

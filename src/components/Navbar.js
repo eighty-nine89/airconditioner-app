@@ -1,17 +1,26 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { FaEllipsisV, FaTimes } from "react-icons/fa";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaWhatsapp } from "react-icons/fa6";
+// import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaWhatsapp } from "react-icons/fa6";
 import { TbAirConditioning } from "react-icons/tb";
 import { Link, useNavigate } from 'react-router-dom';
 
 // Mock product data (replace with actual data)
 const initialProducts = [
-    { name: "Hisense Air Condition", category: "Air condtioner", price: 180, id: 1, slug: 'products' },
-    { name: "Nasco Air Condition", category: "Air condtioner", price: 150, id: 2, slug: 'products' },
-    { name: "Bruhm Air Condition", category: "Air condtioner", price: 400, id: 3, slug: 'products' },
-    { name: "LG Air Condition", category: "Air condtioner", price: 250, id: 4, slug: 'products' },
-    { name: "TCL Air Condition", category: "Air condtioner", price: 180, id: 5, slug: 'products' },
-    { name: "Midea Air Condition", category: "Air condtioner", price: 300, id: 6, slug: 'products' },
+    { name: "Hisense Air Condition", category: "Air condtioner", price: 0, id: 1, slug: 'products' },
+    { name: "Nasco Air Condition", category: "Air condtioner", price: 0, id: 2, slug: 'products' },
+    { name: "Bruhm Air Condition", category: "Air condtioner", price: 0, id: 3, slug: 'products' },
+    { name: "LG Air Condition", category: "Air condtioner", price: 0, id: 4, slug: 'products' },
+    { name: "TCL Air Condition", category: "Air condtioner", price: 0, id: 5, slug: 'products' },
+    { name: "Midea Air Condition", category: "Air condtioner", price: 0, id: 6, slug: 'products' },
+    { name: "LG Electric Hob", category: "hob", price: 0, id: 7, slug: 'products' },
+    { name: "Nasco Electric Hob", category: "hob", price: 0, id: 8, slug: 'products' },
+    { name: "Hisense Gas Hob", category: "hob", price: 0, id: 9, slug: 'products' },
+    { name: "LG Refrigerator", category: "refrigerator", price: 0, id: 10, slug: 'products' },
+    { name: "Hisense Silver Fridge", category: "refrigerator", price: 0, id: 11, slug: 'products' },
+    { name: "Hisense Mini Fridge", category: "refrigerator", price: 0, id: 12, slug: 'products' },
+    { name: "Nasco Fridge", category: "refrigerator", price: 0, id: 13, slug: 'products' },
+    { name: "Nasco Chest Freezer", category: "refrigerator", price: 0, id: 14, slug: 'products' },
+    { name: "Nasco Mini Fridge", category: "refrigerator", price: 0, id: 15, slug: 'products' },
 
 ];
 
@@ -101,8 +110,14 @@ const Navbar = () => {
                         <div className='openhours lg:visible invisible my-2 lg:my-auto'>
                             <h4><span className='font-bold'>Our Timing: </span> Mon - Sat, 8:00 am - 7:00 pm</h4>
                         </div>
-                        {/* social media */}
                         <div className='socialmedia lg:visible invisible flex flex-row gap-2 my-2 lg:my-auto'>
+                            <h4 className='font-bold'> Digital Address:</h4>
+                            <div className='flex flex-row gap-2 font-light my-auto'>
+                               GA - 000 - 0000
+                            </div>
+                        </div>
+                        {/* social media */}
+                        {/* <div className='socialmedia lg:visible invisible flex flex-row gap-2 my-2 lg:my-auto'>
                             <h4 className='font-bold'> Follow Us:</h4>
                             <div className='flex flex-row gap-2 font-light my-auto'>
                                 <a href=" " target="_blank" rel="noreferrer"><FaWhatsapp className="w-fit text-dark-gray hover:text-black" /></a>
@@ -111,7 +126,7 @@ const Navbar = () => {
                                 <a href=" " target="_blank" rel="noreferrer"><FaTiktok className="w-fit text-dark-gray hover:text-black" /></a>
                                 <a href=" " target="_blank" rel="noreferrer"><FaFacebook className="w-fit text-dark-gray hover:text-black" /></a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -131,12 +146,13 @@ const Navbar = () => {
                 <ul className="hidden lg:flex flex-row gap-5 text-gray text-sm whitespace-nowrap font-extralight z-30">
                     <li className="hover:text-black"><Link to="/">Home</Link></li>
                     <li className="hover:text-black"><Link to="/services">Services</Link></li>
+                    <li className="hover:text-black"><Link to="/products">Products</Link></li>
                     <li className="hover:text-black"><Link to="/aboutus">About Us</Link></li>
                     <li className="hover:text-black"><Link to="/contactus">Contact Us</Link></li>
                 </ul>
 
                 {/* Desktop Search */}
-                <div className="hidden lg:block lg:text-sm font-light relative"> 
+                <div className="hidden lg:block lg:text-sm font-light relative">
                     <input
                         type="search"
                         placeholder="Search products here..."

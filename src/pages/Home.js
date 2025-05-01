@@ -1,4 +1,4 @@
-import { React, useRef } from 'react';
+import React, { useRef } from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/customButton.css';
 import '../styles/customGallery.css';
@@ -9,11 +9,12 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { IoTimeOutline } from 'react-icons/io5';
 import { LiaToolsSolid } from 'react-icons/lia';
 import { CiSettings } from 'react-icons/ci';
-import { FaScaleBalanced, FaUserCheck } from 'react-icons/fa6';
+import { FaScaleBalanced, FaUserCheck, FaXTwitter } from 'react-icons/fa6';
 import Footer from '../components/Footer';
 import { Preloader } from '../components/Preloader';
 import ScrollReveal from '../components/ScrollReveal';
 import Gallery from '../components/Gallery';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Home = () => {
   const scrollRef = useRef(null);
@@ -48,8 +49,43 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* Best Seller Carousel */}
-
+      {/* Sticky Social Media Bar */}
+      <ScrollReveal animationClass="animate-fade-in" threshold={0.5}>
+        <div className="fixed top-1/2 right-4 transform -translate-y-1/2 flex flex-col gap-4 z-50">
+          <Link to={' '}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-fbcolor hover:bg-fbcolor text-white rounded-full p-2 transition hover:scale-110 duration-500 transform ease-in-out"
+            aria-label="Facebook"
+          >
+            <FaFacebook size={26} />
+          </Link>
+          <Link to={' '}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black hover:bg-black text-white rounded-full p-2 transition hover:scale-110 duration-500 transform ease-in-out"
+            aria-label="Twitter"
+          >
+            <FaXTwitter size={26} />
+          </Link>
+          <Link to={' '}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-insta-color hover:bg-insta-color text-white rounded-full p-2 transition hover:scale-110 duration-500 transform ease-in-out"
+            aria-label="Instagram"
+          >
+            <FaInstagram size={26} />
+          </Link>
+          <Link to={' '}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-whatsapp-color hover:bg-whatsapp-color text-white rounded-full p-2 transition hover:scale-110 duration-500 transform ease-in-out"
+            aria-label="WhatsApp"
+          >
+            <FaWhatsapp size={26} />
+          </Link>
+        </div>
+      </ScrollReveal>
       {/* our services */}
       <div className='relative bg-light-gray'>
         <ScrollReveal>
@@ -166,7 +202,7 @@ const Home = () => {
       <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:px-52 xl:px-80 mx-auto'>
         <ScrollReveal>
           <div className='text-center'>
-            <h1 className='text-3xl font-pt-serif font-light capitalize'><span className="text-gray">watch:</span> our  work</h1>
+            <h1 className='text-3xl font-pt-serif font-light capitalize'><span className="text-gray">watch:</span> our  work</h1>
             <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
           </div>
         </ScrollReveal>
@@ -233,7 +269,7 @@ const Home = () => {
               <div className='flex justify-center items-center'>
                 <PiMapPinArea className='text-3xl text-gray hover:text-black' />
               </div>
-              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our Office Address</h3>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our Office Address</h3>
               <p className='whitespace-nowrap lg:text-base'>
                 Adjen Kotoku, Amasaman, Accra
               </p>
@@ -245,7 +281,7 @@ const Home = () => {
                 <div className='flex justify-center items-center'>
                   <MdOutlineEmail className='text-3xl text-gray hover:text-black' />
                 </div>
-                <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> general enquires</h3>
+                <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> general enquires</h3>
                 <p className='whitespace-nowrap lg:text-base' onClick={() => window.location.href = 'mailto:megatechcoolingservicesgh@gmail.com'}>
                   megatechcoolingservicesgh@gmail.com
                 </p>
@@ -257,7 +293,7 @@ const Home = () => {
               <div className='flex justify-center items-center'>
                 <FiPhoneCall className='text-3xl text-gray hover:text-black' />
               </div>
-              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Call Us</h3>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Call Us</h3>
               <p className='whitespace-nowrap lg:text-base text-center'>
                 +233 0244523845 | +233 0201588787
               </p>
@@ -268,7 +304,7 @@ const Home = () => {
               <div className='flex justify-center items-center'>
                 <IoTimeOutline className='text-3xl text-gray hover:text-black' />
               </div>
-              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our timings</h3>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our timings</h3>
               <p className='whitespace-nowrap lg:text-base'>
                 Monday - Saturday
               </p>
