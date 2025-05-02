@@ -1,5 +1,5 @@
 import React from 'react';
-import { TbAirConditioning } from 'react-icons/tb';
+// import { TbAirConditioning } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -9,8 +9,8 @@ const Footer = () => {
                 <div className='flex flex-col mt-5 text-sm lg:items-start items-center'>
                     <div className='lg:mx-auto lg:items-start text-center'>
                         <Link to="/" className='flex flex-row gap-2 items-center'>
-                            <TbAirConditioning className="w-fit text-2xl my-auto" />
-                            <h4 className='text-lg uppercase font-light font-pt-serif text-center text-decoration-none'>MegaTech Cooling Services</h4>
+                        <img src="../assets/home/ac-favicon.png" alt="Logo" className="w-5 h-5 lg:w-6 lg:h-6 my-auto items-center" />
+                        <h4 className='text-lg uppercase font-light font-pt-serif text-center text-decoration-none'>MegaTech Cooling Services</h4>
                         </Link>
                     </div>
                     <p className='font-light lg:text-center text-xl font-dancingScript'>MegaTech, Cooling Time...</p>

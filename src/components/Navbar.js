@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { FaEllipsisV, FaTimes } from "react-icons/fa";
 // import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaWhatsapp } from "react-icons/fa6";
-import { TbAirConditioning } from "react-icons/tb";
+// import { TbAirConditioning } from "react-icons/tb";
 import { Link, useNavigate } from 'react-router-dom';
 
 // Mock product data (replace with actual data)
@@ -91,8 +91,8 @@ const Navbar = () => {
     return (
         <div className="Navbar cursor-pointer">
             {/* Top Contact Bar */}
-            <div className='w-full bg-light-gray fixed z-40 lg:px-64 xl:px-32'>
-                <div className="flex flex-col lg:flex-row gap-5 lg:items-center lg:justify-between mx-auto h-10">
+            <div className='w-full bg-light-gray fixed z-40 lg:px-64'>
+                <div className="flex flex-col lg:flex-row gap-5 lg:items-center lg:justify-evenly mx-auto h-10 whitespace-nowrap">
                     {/* Phone and Email */}
                     <div className='flex flex-col lg:flex-row gap-2 items-center'>
                         {/* phone */}
@@ -134,7 +134,8 @@ const Navbar = () => {
             <div className="w-full h-24 pt-10 px-5 lg:px-64 flex items-center justify-between relative">
                 {/* Logo */}
                 <div className='flex flex-row gap-2 lg:my-auto'>
-                    <TbAirConditioning className="w-fit text-2xl my-auto" />
+                    {/* <TbAirConditioning className="w-fit text-2xl my-auto" /> */}
+                    <img src="../assets/home/ac-favicon.png" alt="Logo" className="w-5 h-5 lg:w-6 lg:h-6 my-auto items-center" />
                     <Link to='/'>
                         <h4 className="font-light font-pt-serif whitespace-nowrap text-sm lg:text-base uppercase ">
                             MegaTech Cooling Services
