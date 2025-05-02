@@ -195,6 +195,7 @@ const Navbar = () => {
                 <div className="flex flex-col items-center pt-20 space-y-6 text-lg font-light">
                     <Link to="/" className="hover:text-black" onClick={() => setMenuOpen(false)}>Home</Link>
                     <Link to="/services" className="hover:text-black" onClick={() => setMenuOpen(false)}>Services</Link>
+                    <Link to="/products" className="hover:text-black" onClick={() => setMenuOpen(false)}>Products</Link>
                     <Link to="/aboutus" className="hover:text-black" onClick={() => setMenuOpen(false)}>About Us</Link>
                     <Link to="/contactus" className="hover:text-black" onClick={() => setMenuOpen(false)}>Contact Us</Link>
 
