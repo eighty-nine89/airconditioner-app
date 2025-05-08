@@ -6,3 +6,12 @@ google Email
 -Gender: Male
 -email: megatechcoolingservicesgh@gmail.com
 -password: happySunri$e2000
+
+
+------------------facebook-----------------------
+first name: MegaTech 
+last name: Ghana
+dob: jan 01, 2000
+phone number: +233244523845
+email: rodrickfynn89@gmail.com
+password: happySunri$e2000
