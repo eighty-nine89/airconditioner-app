@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Helmet } from 'react-helmet'; // Import Helmet
 import Navbar from '../components/Navbar';
 import '../styles/customButton.css';
 import '../styles/customGallery.css';
@@ -34,6 +35,16 @@ const Home = () => {
 
   return (
     <div className='text-center text-2xl cursor-pointer'>
+      <Helmet>
+        <title>Megatech Cooling Services | AC Installation & Repair</title>
+        <meta name="description" content="Megatech Cooling Services offers top-notch air conditioning installation, repair, and maintenance services in Ghana. We specialize in AC sales, general maintenance, and repair of gas and electric ovens, and refrigerators.  Your trusted partner for all cooling and appliance needs." />
+        <meta name="keywords" content="AC installation, AC repair, air conditioning services, refrigerator repair, oven repair, appliance maintenance, Accra services, cooling services, HVAC, electrical engineering services, electric oven, electric and gas oven, oven repairs, fridge repairs" />
+        <meta property="og:title" content="Megatech Cooling Services - Professional AC Services" />
+        <meta property="og:description" content="Expert AC services, refrigerator repairs, and oven maintenance. Serving Accra with quality and reliability." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.megatech-ghana.onrender.com/" />
+      </Helmet>
       <Preloader />
       <Navbar />
       <div className='relative'>
@@ -100,7 +111,7 @@ const Home = () => {
             <div className='flex flex-col lg:flex-row justify-center items-center flex-1 w-full h-full mx-auto mt-10 lg:px-0 lg:mt-10 gap-5 lg:gap-10'>
               <div className='otherProduct'>
                 <img src='../assets/ourservices/acrepairs.jpg' alt='air condition' className='w-full h-48 object-cover transform hover:scale-105 transition duration-500 ease-in-out rounded-xl shadow-lg' />
-                <p className='text-gray text-base capitalize mt-2'>Air condtioner sales & Installation</p>
+                <p className='text-gray text-base capitalize mt-2'>Air conditioner sales & Installation</p>
                 <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
                   We offer a wide range of high-quality air conditioning units suitable for both residential and commercial use. Our expert technicians ensure seamless installation,
                   optimizing performance and energy efficiency while maintaining safety and compliance with industry standards.
@@ -202,7 +213,7 @@ const Home = () => {
       <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:px-52 xl:px-80 mx-auto'>
         <ScrollReveal>
           <div className='text-center'>
-            <h1 className='text-3xl font-pt-serif font-light capitalize'><span className="text-gray">watch:</span> our  work</h1>
+            <h1 className='text-3xl font-pt-serif font-light capitalize'><span className="text-gray">watch:</span> our  work</h1>
             <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
           </div>
         </ScrollReveal>
@@ -269,7 +280,7 @@ const Home = () => {
               <div className='flex justify-center items-center'>
                 <PiMapPinArea className='text-3xl text-gray hover:text-black' />
               </div>
-              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our Office Address</h3>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our Office Address</h3>
               <p className='whitespace-nowrap lg:text-base'>
                 Adjen Kotoku, Amasaman, Accra
               </p>
@@ -281,7 +292,7 @@ const Home = () => {
                 <div className='flex justify-center items-center'>
                   <MdOutlineEmail className='text-3xl text-gray hover:text-black' />
                 </div>
-                <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> general enquires</h3>
+                <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> general enquires</h3>
                 <p className='whitespace-nowrap lg:text-base' onClick={() => window.location.href = 'mailto:megatechcoolingservicesgh@gmail.com'}>
                   megatechcoolingservicesgh@gmail.com
                 </p>
@@ -293,7 +304,7 @@ const Home = () => {
               <div className='flex justify-center items-center'>
                 <FiPhoneCall className='text-3xl text-gray hover:text-black' />
               </div>
-              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Call Us</h3>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Call Us</h3>
               <p className='whitespace-nowrap lg:text-base text-center'>
                 +233 0244523845 | +233 0201588787
               </p>
@@ -304,7 +315,7 @@ const Home = () => {
               <div className='flex justify-center items-center'>
                 <IoTimeOutline className='text-3xl text-gray hover:text-black' />
               </div>
-              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our timings</h3>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our timings</h3>
               <p className='whitespace-nowrap lg:text-base'>
                 Monday - Saturday
               </p>
