@@ -51,7 +51,7 @@ const Home = () => {
         <img src="../assets/home/ac.webp" alt="Air Conditioner" className='w-full lg:h-96 lg:object-cover object-contain' />
         <div className='absolute left-20 top-7 lg:top-1/2 lg:left-72 transform -translate-x-1/2 -translate-y-1/2 font-bold text-xl lg:text-4xl'>
           {/* buttons */}
-          <div className='flex flex-row gap-16 justify-center align-middle mt-32 whitespace-nowrap'>
+          <div className='flex flex-row gap-16 justify-center align-middle mt-32 whitespace-nowrap lg:visible xl:visible invisible'>
             <span className='mt-16 justify-center items-center'>
               <Link to="/products" className='customBtn1'>
                 Our Products
