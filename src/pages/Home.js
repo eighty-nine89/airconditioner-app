@@ -36,10 +36,10 @@ const Home = () => {
   return (
     <div className='text-center text-2xl cursor-pointer'>
       <Helmet>
-        <title>Megatech Cooling Services | AC Installation & Repair</title>
+        <title>Megatech Cooling Services</title>
         <meta name="description" content="Megatech Cooling Services offers top-notch air conditioning installation, repair, and maintenance services in Ghana. We specialize in AC sales, general maintenance, and repair of gas and electric ovens, and refrigerators.  Your trusted partner for all cooling and appliance needs." />
         <meta name="keywords" content="AC installation, AC repair, air conditioning services, refrigerator repair, oven repair, appliance maintenance, Accra services, cooling services, HVAC, electrical engineering services, electric oven, electric and gas oven, oven repairs, fridge repairs" />
-        <meta property="og:title" content="Megatech Cooling Services - Professional AC Services" />
+        <meta property="og:title" content="Megatech Cooling Services - Megatech, cooling time..." />
         <meta property="og:description" content="Expert AC services, refrigerator repairs, and oven maintenance. Serving Accra with quality and reliability." />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
