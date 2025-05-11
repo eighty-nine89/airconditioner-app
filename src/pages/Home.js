@@ -1,8 +1,5 @@
-import React, { useRef } from 'react';
-import { Helmet } from 'react-helmet'; // Import Helmet
-import Navbar from '../components/Navbar';
-import '../styles/customButton.css';
-import '../styles/customGallery.css';
+import React, { useRef, Suspense, lazy } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { PiMapPinArea } from 'react-icons/pi';
 import { MdOutlineEmail } from 'react-icons/md';
@@ -11,11 +8,17 @@ import { IoTimeOutline } from 'react-icons/io5';
 import { LiaToolsSolid } from 'react-icons/lia';
 import { CiSettings } from 'react-icons/ci';
 import { FaScaleBalanced, FaUserCheck, FaXTwitter } from 'react-icons/fa6';
-import Footer from '../components/Footer';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { Preloader } from '../components/Preloader';
 import ScrollReveal from '../components/ScrollReveal';
-import Gallery from '../components/Gallery';
-import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import '../styles/customButton.css';
+import '../styles/customGallery.css';
+
+
+// Use lazy loading for components
+const Navbar = lazy(() => import('../components/Navbar'));
+const Footer = lazy(() => import('../components/Footer'));
+const Gallery = lazy(() => import('../components/Gallery'));
 
 const Home = () => {
   const scrollRef = useRef(null);
@@ -38,7 +41,7 @@ const Home = () => {
       {/* search engine optimization */}
       <Helmet>
         <title>Megatech Cooling Services</title>
-        <meta name="description" content="Megatech Cooling Services offers top-notch air conditioning installation, repair, and maintenance services in Ghana. We specialize in AC sales, general maintenance, and repair of gas and electric ovens, and refrigerators.  Your trusted partner for all cooling and appliance needs." />
+        <meta name="description" content="Megatech Cooling Services offers top-notch air conditioning installation, repair, and maintenance services in Ghana. We specialize in AC sales, general maintenance, and repair of gas and electric ovens, and refrigerators.  Your trusted partner for all cooling and appliance needs." />
         <meta name="keywords" content="AC installation, AC repair, air conditioning services, refrigerator repair, oven repair, appliance maintenance, Accra services, cooling services, HVAC, electrical engineering services, electric oven, electric and gas oven, oven repairs, fridge repairs" />
         <meta property="og:title" content="Megatech Cooling Services - Megatech, cooling time..." />
         <meta property="og:description" content="Expert AC services, refrigerator repairs, and oven maintenance. Serving Accra with quality and reliability." />
@@ -46,8 +49,10 @@ const Home = () => {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.megatechghana.com/" />
       </Helmet>
-      <Preloader />
-      <Navbar />
+      <Suspense fallback={<Preloader />}>
+        <Preloader />
+        <Navbar />
+      </Suspense>
       <div className='relative'>
         <img src="../assets/home/ac.webp" alt="Air Conditioner" className='w-full lg:h-96 lg:object-cover object-contain' />
         <div className='absolute left-20 top-7 lg:top-1/2 lg:left-72 transform -translate-x-1/2 -translate-y-1/2 font-bold text-xl lg:text-4xl'>
@@ -160,7 +165,7 @@ const Home = () => {
             <hr className='mt-5 w-6 text-center items-center mx-auto border-2 lg:mx-auto' />
           </div>
         </ScrollReveal>
-        {/* why  us features */}
+        {/* why  us features */}
         <ScrollReveal>
           <div className='flex flex-col flex-2 lg:pt-10 lg:pb-16 lg:flex-row justify-between items-center w-full h-full mx-auto lg:px-80 mb-10 lg:mb-10 mt-5 gap-2 lg:gap-1'>
             <div className="flex flex-col justify-center items-center text-center w-full h-full lg:gap-5 gap-5">
@@ -214,7 +219,7 @@ const Home = () => {
       <div className='w-full flex flex-col text-center justify-center px-4 sm:px-10 lg:px-52 xl:px-80 mx-auto'>
         <ScrollReveal>
           <div className='text-center'>
-            <h1 className='text-3xl font-pt-serif font-light capitalize'><span className="text-gray">watch:</span> our  work</h1>
+            <h1 className='text-3xl font-pt-serif font-light capitalize'><span className="text-gray">watch:</span> our  work</h1>
             <hr className='mt-5 w-6 text-center items-center border-2 mx-auto lg:mx-auto' />
           </div>
         </ScrollReveal>
@@ -229,7 +234,9 @@ const Home = () => {
         </div>
       </ScrollReveal>
       {/* Gallery */}
-      <Gallery />
+      <Suspense fallback={<div>Loading Gallery...</div>}>
+        <Gallery />
+      </Suspense>
       {/* clients */}
       <div className="mt-5 px-4 lg:px-52">
         <ScrollReveal>
@@ -281,7 +288,7 @@ const Home = () => {
               <div className='flex justify-center items-center'>
                 <PiMapPinArea className='text-3xl text-gray hover:text-black' />
               </div>
-              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our Office Address</h3>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our Office Address</h3>
               <p className='whitespace-nowrap lg:text-base'>
                 Adjen Kotoku, Amasaman, Accra
               </p>
@@ -293,7 +300,7 @@ const Home = () => {
                 <div className='flex justify-center items-center'>
                   <MdOutlineEmail className='text-3xl text-gray hover:text-black' />
                 </div>
-                <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> general enquires</h3>
+                <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> general enquires</h3>
                 <p className='whitespace-nowrap lg:text-base' onClick={() => window.location.href = 'mailto:megatechcoolingservicesgh@gmail.com'}>
                   megatechcoolingservicesgh@gmail.com
                 </p>
@@ -305,7 +312,7 @@ const Home = () => {
               <div className='flex justify-center items-center'>
                 <FiPhoneCall className='text-3xl text-gray hover:text-black' />
               </div>
-              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Call Us</h3>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Call Us</h3>
               <p className='whitespace-nowrap lg:text-base text-center'>
                 +233 0244523845 | +233 0201588787
               </p>
@@ -316,7 +323,7 @@ const Home = () => {
               <div className='flex justify-center items-center'>
                 <IoTimeOutline className='text-3xl text-gray hover:text-black' />
               </div>
-              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our timings</h3>
+              <h3 className='text-center text-lg text-gray hover:text-black mt-1 mb-1  capitalize'> Our timings</h3>
               <p className='whitespace-nowrap lg:text-base'>
                 Monday - Saturday
               </p>
@@ -426,7 +433,9 @@ const Home = () => {
         </div>
       </ScrollReveal>
       {/* footer */}
-      <Footer />
+      <Suspense fallback={<div>Loading Footer...</div>}>
+        <Footer />
+      </Suspense>
     </div>
   )
 }
