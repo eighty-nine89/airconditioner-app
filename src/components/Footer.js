@@ -61,7 +61,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='text-center w-full mt-4 text-xs bg-light-gray p-3 font-light'>
-                <p>&copy;2025 by Air conditioner store. All rights Reserved. Developed by <span className='underline hover:text-gray'><Link to={"https://samuelawuetey.onrender.com"} target='_blank' rel='noreferrer'>89Devs</Link></span></p>
+                <p>&copy;2025 by Air conditioner store. All rights Reserved. Developed by <span className='underline hover:text-gray'><a href="https://samuelawuetey.onrender.com" target='_blank' rel='noreferrer'>89Devs</a></span></p>
             </div>
         </div>
     )
