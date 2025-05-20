@@ -1,4 +1,11 @@
 import React from 'react';
+import { CiFacebook, CiLinkedin } from 'react-icons/ci';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaQuestion } from 'react-icons/fa6';
+import { IoStorefrontOutline } from 'react-icons/io5';
+import { LuContact } from 'react-icons/lu';
+import { MdDeliveryDining, MdOutlineDesignServices, MdOutlinePolicy, MdProductionQuantityLimits } from 'react-icons/md';
+import { RiGalleryFill } from 'react-icons/ri';
 // import { TbAirConditioning } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 
@@ -15,35 +22,35 @@ const Footer = () => {
                     </div>
                     <p className='font-light lg:text-center text-xl font-dancingScript'>MegaTech, Cooling Time...</p>
                 </div>
-                <div className='items-center text-center mt-5'>
+                <div className='items-center text-center lg:items-start mx-auto mt-5'>
                     <ul className='flex flex-col gap-4 lg:gap-4 whitespace-nowrap font-light text-sm'>
-                        <Link to="/products"><li className='hover:text-black text-dark-gray capitalize' target='_blank' rel='noreferrer'>Products</li></Link>
-                        <Link to="/aboutus"><li className='hover:text-black text-dark-gray capitalize' target='_blank' rel='noreferrer'>About Us</li></Link>
-                        <Link to="/services"><li className='hover:text-black text-dark-gray capitalize' target='_blank' rel='noreferrer'>Services</li></Link>
-                        <Link to="/contactus"><li className='hover:text-black text-dark-gray capitalize' target='_blank' rel='noreferrer'>Contact us</li></Link>
+                        <Link to="/products"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1' target='_blank' rel='noreferrer'><MdProductionQuantityLimits /> Products</li></Link>
+                        <Link to="/aboutus"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1' target='_blank' rel='noreferrer'><IoStorefrontOutline /> About Us</li></Link>
+                        <Link to="/services"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1' target='_blank' rel='noreferrer'><MdOutlineDesignServices /> Services</li></Link>
+                        <Link to="/contactus"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1' target='_blank' rel='noreferrer'><LuContact /> Contact us</li></Link>
                     </ul>
                 </div>
-                <div className='items-center text-center mt-5'>
+                <div className='items-center text-center lg:items-start mx-auto mt-5'>
                     <ul className='flex flex-col gap-4 md:gap-4 whitespace-nowrap font-light text-sm'>
-                        <Link to=""><li className='hover:text-black text-dark-gray capitalize' target='_blank' rel='noreferrer'>Instagram</li></Link>
-                        <Link to=""><li className='hover:text-black text-dark-gray capitalize' target='_blank' rel='noreferrer'>facebook</li></Link>
-                        <Link to=""><li className='hover:text-black text-dark-gray capitalize' target='_blank' rel='noreferrer'>Whatsapp</li></Link>
-                        <Link to=""><li className='hover:text-black text-dark-gray capitalize' target='_blank' rel='noreferrer'>LinkedIn</li></Link>
+                        <Link to=""><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1' target='_blank' rel='noreferrer'><FaInstagram /> Instagram</li></Link>
+                        <Link to=""><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1' target='_blank' rel='noreferrer'><CiFacebook /> facebook</li></Link>
+                        <Link to=""><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1' target='_blank' rel='noreferrer'><FaWhatsapp /> Whatsapp</li></Link>
+                        <Link to=""><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1' target='_blank' rel='noreferrer'><CiLinkedin /> LinkedIn</li></Link>
                     </ul>
                 </div>
-                <div className='items-center text-center mt-5'>
+                <div className='items-center text-center lg:items-start mx-auto mt-5'>
                     <ul className='flex flex-col gap-4 lg:gap-4 whitespace-nowrap font-light text-sm'>
-                        <Link to="/gallery"><li className='hover:text-black text-dark-gray capitalize'>Gallery</li></Link>
-                        <Link to="/faqs"><li className='hover:text-black text-dark-gray capitalize'>FAQs</li></Link>
-                        <Link to="/deliverypolicy"><li className='hover:text-black text-dark-gray capitalize'>Delivery & service policy</li></Link>
-                        <Link to="/storepolicy"><li className='hover:text-black text-dark-gray capitalize'>Store Policy</li></Link>
+                        <Link to="/gallery"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1'><RiGalleryFill /> Gallery</li></Link>
+                        <Link to="/faqs"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1'><FaQuestion /> FAQs</li></Link>
+                        <Link to="/deliverypolicy"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1'><MdDeliveryDining /> Delivery & Service Policy</li></Link>
+                        <Link to="/storepolicy"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1'><MdOutlinePolicy /> Store Policy</li></Link>
                     </ul>
                 </div>
-                <div className='items-center text-start mt-5 w-full lg:w-auto'>
+                <div className='items-center text-center lg:items-start mt-5 w-full lg:w-auto'>
                     <h4 className='font-bold text-xl tracking-wider lg:text-start text-center'>Join Us!</h4>
                     <p className='text-sm lg:text-sm text-center text-gray'>subscribe to our newstletter</p>
                     <form action={'https://formsubmit.co/megatechcoolingservicesgh@gmail.com'} method='POST'>
-                        <div className='flex flex-col mt-2 font-light text-sm'>
+                        <div className='flex flex-col mt-2 font-light text-sm items-start'>
                             <label htmlFor='email'>Email<span className='text-red'>*</span></label>
                             <input
                                 type='email'
@@ -61,7 +68,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='text-center w-full mt-4 text-xs bg-light-gray p-3 font-light'>
-                <p>&copy;2025 by Air conditioner store. All rights Reserved. Developed by <span className='underline hover:text-gray'><a href="https://samuelawuetey.onrender.com" target='_blank' rel='noreferrer'>89Devs</a></span></p>
+                <p>&copy;2025 by Megatech Cooling Services. All rights Reserved. Developed by <span className='underline hover:text-gray'><a href="https://samuelawuetey.onrender.com" target='_blank' rel='noreferrer'>89Devs</a></span></p>
             </div>
         </div>
     )
