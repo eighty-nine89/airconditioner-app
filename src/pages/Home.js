@@ -175,7 +175,7 @@ const Home = () => {
               </div>
               <div className='flex flex-col lg:flex-row items-center lg:gap-5 gap-5 text-lg text-gray capitalize'>
                 <CiSettings className='text-6xl text-gray hover:text-black' />
-                <p>customize resolution</p>
+                <p>customize resolution </p>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center w-full h-full lg:gap-5 gap-5">
@@ -345,7 +345,8 @@ const Home = () => {
         {/* embedded link */}
         <ScrollReveal animationClass="animate-slide-left" threshold={0.2} delay={300}>
           <div className='text-center justify-center mx-auto mt-10 lg:px-52 lg:mt-10 mb-10 lg:mb-10 gap-2 lg:gap-1 lg:pb-10 pb-10'>
-            <iframe
+            {/* satellite view map */}
+            {/* <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8529.392427774788!2d-0.3009868!3d5.7067147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfa0205c8a47a9%3A0x96835ac19d3c7dc!2sAmasaman!5e1!3m2!1sen!2sgh!4v1745943686241!5m2!1sen!2sgh"
               width="100%"
               height={450}
@@ -354,6 +355,17 @@ const Home = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Google Maps Embed - Amasaman"
+            /> */}
+            {/* normal view map */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15880.177893584267!2d-0.300987!3d5.706715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfa0205c8a47a9%3A0x96835ac19d3c7dc!2sAmasaman!5e0!3m2!1sen!2sgh!4v1747750322144!5m2!1sen!2sgh"
+              width="100%"
+              height={450}
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps Embed - Amasaman 2"
             />
           </div>
         </ScrollReveal>

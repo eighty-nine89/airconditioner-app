@@ -42,7 +42,7 @@ const Footer = () => {
                     <ul className='flex flex-col gap-4 lg:gap-4 whitespace-nowrap font-light text-sm'>
                         <Link to="/gallery"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1'><RiGalleryFill /> Gallery</li></Link>
                         <Link to="/faqs"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1'><FaQuestion /> FAQs</li></Link>
-                        <Link to="/deliverypolicy"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1'><MdDeliveryDining /> Delivery & Service Policy</li></Link>
+                        <Link to="/deliverypolicy"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1'><MdDeliveryDining />Service line</li></Link>
                         <Link to="/storepolicy"><li className='hover:text-black text-dark-gray capitalize flex flex-row items-center gap-1'><MdOutlinePolicy /> Store Policy</li></Link>
                     </ul>
                 </div>
