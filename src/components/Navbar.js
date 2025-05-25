@@ -91,8 +91,8 @@ const Navbar = () => {
     return (
         <div className="Navbar cursor-pointer">
             {/* Top Contact Bar */}
-            <div className='w-full bg-light-gray fixed z-40 lg:px-64'>
-                <div className="flex flex-col lg:flex-row gap-5 lg:items-center lg:justify-evenly mx-auto h-10 whitespace-nowrap">
+            <div className='w-full bg-light-gray fixed z-40 lg:px-64 '>
+                <div className="flex flex-col lg:flex-row gap-5 lg:items-center md:items-center sm:items-center lg:justify-between mx-auto h-10 whitespace-nowrap">
                     {/* Phone and Email */}
                     <div className='flex flex-col lg:flex-row gap-2 items-center'>
                         {/* phone */}

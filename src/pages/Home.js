@@ -1,4 +1,4 @@
-import React, { useRef, Suspense, lazy } from 'react';
+import React, { useRef, Suspense, lazy, useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { PiMapPinArea } from 'react-icons/pi';
@@ -35,7 +35,54 @@ const Home = () => {
 
     container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
   };
+  // carousel 
+const [activeIndex, setActiveIndex] = useState(0);
 
+  // Array of image data for the carousel
+  const images = [
+    {
+      src: '../assets/home/ac.webp',
+      alt: 'ac logo', 
+    },
+    {
+      src: '../assets/home/refrigerator.jpg',
+      alt: 'refrigerator logo',
+    },
+    {
+      src: '../assets/home/homeappliances.jpg',
+      alt: 'home appliances logo',
+    },
+    {
+      src: '../assets/home/oven.jpg',
+      alt: 'oven logo',
+    },
+  ];
+
+  // useEffect hook to handle automatic slide transitions
+  useEffect(() => {
+    // Set up an interval to change the active slide every 5 seconds
+    const interval = setInterval(() => {
+      setActiveIndex((current) => (current === images.length - 1 ? 0 : current + 1));
+    }, 3000); // 5000 milliseconds = 5 seconds
+
+    // Cleanup function to clear the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, [images.length]); // Re-run effect if the number of images changes
+
+  // Function to navigate to a specific slide by its index
+  const goToSlide = (index) => {
+    setActiveIndex(index);
+  };
+
+  // Function to navigate to the previous slide
+  const goToPrevSlide = () => {
+    setActiveIndex((current) => (current === 0 ? images.length - 1 : current - 1));
+  };
+
+  // Function to navigate to the next slide
+  const goToNextSlide = () => {
+    setActiveIndex((current) => (current === images.length - 1 ? 0 : current + 1));
+  };
   return (
     <div className='text-center text-2xl cursor-pointer'>
       {/* search engine optimization */}
@@ -53,19 +100,95 @@ const Home = () => {
         <Preloader />
         <Navbar />
       </Suspense>
-      <div className='relative'>
-        <img src="../assets/home/ac.webp" alt="Air Conditioner" className='w-full lg:h-96 lg:object-cover object-contain' />
-        <div className='absolute left-20 top-7 lg:top-1/2 lg:left-72 transform -translate-x-1/2 -translate-y-1/2 font-bold text-xl lg:text-4xl'>
-          {/* buttons */}
-          <div className='flex flex-row gap-16 justify-center align-middle mt-32 whitespace-nowrap lg:visible xl:visible invisible'>
-            <span className='mt-16 justify-center items-center'>
-              <Link to="/products" className='customBtn1'>
-                Our Products
-              </Link>
-            </span>
-          </div>
-        </div>
+      {/* home carousel */}
+      <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-96 overflow-hidden">
+      {/* Carousel indicators (dots) */}
+      <div className="absolute bottom-0 left-1/2 z-20 flex -translate-x-1/2 space-x-2 pb-4">
+        {images.map((_, index) => (
+          <button
+            key={index} // Unique key for each button in the map
+            type="button"
+            onClick={() => goToSlide(index)} // Go to the clicked slide
+            // Dynamically apply background color based on active slide
+            className={`h-2 w-2 rounded-full ${
+              activeIndex === index ? 'bg-white' : 'bg-black bg-opacity-50'
+            }`}
+          ></button>
+        ))}
       </div>
+
+      {/* The slideshow container */}
+      {/* h-full ensures this div takes the full height of its responsive parent */}
+      <div className="relative h-full w-full overflow-hidden">
+        {images.map((image, index) => (
+          <div
+            key={index} // Unique key for each slide
+            // Absolute positioning to layer slides, and transition for fade effect
+            className={`absolute inset-0 transition-opacity duration-2000 ease-in-out ${
+              activeIndex === index ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            {/* Image element */}
+            {/* h-full w-full ensures image fills its parent div. */}
+            {/* object-cover ensures the image covers the entire area of the container,
+                cropping if necessary, thus removing any white gaps. */}
+            <img src={image.src} alt={image.alt} className="h-full w-full object-fill lg:object-cover" />
+          </div>
+        ))}
+      </div>
+
+      {/* Left control button */}
+      <button
+        type="button"
+        onClick={goToPrevSlide} // Navigate to previous slide on click
+        className="absolute left-0 top-1/2 z-10 -translate-y-1/2 cursor-pointer p-4 text-white focus:outline-none"
+      >
+        <span className="inline-block h-8 w-8 rounded-full bg-black bg-opacity-50 p-2">
+          {/* SVG icon for left arrow */}
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="chevron-left"
+            className="h-full w-full"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              fill="currentColor"
+              d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.56.01 33.93L120.76 256l164.24 164.09c9.36 9.36 9.37 24.56.01 33.93l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+            ></path>
+          </svg>
+        </span>
+      </button>
+
+      {/* Right control button */}
+      <button
+        type="button"
+        onClick={goToNextSlide} // Navigate to next slide on click
+        className="absolute right-0 top-1/2 z-10 -translate-y-1/2 cursor-pointer p-4 text-white focus:outline-none"
+      >
+        <span className="inline-block h-8 w-8 rounded-full bg-black bg-opacity-50 p-2">
+          {/* SVG icon for right arrow */}
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="chevron-right"
+            className="h-full w-full"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              fill="currentColor"
+              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.357-24.522 0-33.879L205.947 256 34.523 74.344c-9.357-9.357-9.357-24.522 0-33.879l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+            ></path>
+          </svg>
+        </span>
+      </button>
+    </div>
       {/* Sticky Social Media Bar */}
       <ScrollReveal animationClass="animate-fade-in" threshold={0.5}>
         <div className="fixed top-1/2 right-4 transform -translate-y-1/2 flex flex-col gap-4 z-50">
@@ -152,7 +275,7 @@ const Home = () => {
           </ScrollReveal>
           <ScrollReveal animationClass="animate-slide-left mb-10 lg:mb-10" threshold={0.2} delay={300}>
             <Link to='/services' className='mb-10 lg:mb-10'>
-              <button type='submit' className='border-x border-y mt-3 hover:text-white hover:bg-dark-gray text-sm pl-4 pr-4 rounded-md p-2 capitalize'>learn more</button>
+              <button type='submit' className='border-x border-y mt-3 hover:text-white hover:bg-dark-gray text-sm pl-4 pr-4 rounded-sm p-2 capitalize'>Read More Services</button>
             </Link>
           </ScrollReveal>
         </div>
@@ -400,32 +523,32 @@ const Home = () => {
               {
                 name: "John Dankwa",
                 message: "Fantastic service! They installed our AC quickly and professionally.",
-                image: "../assets/home/user.jpg",
+                image: "../assets/home/user-avatar.jpg",
               },
               {
                 name: "Jane Akua Ansong",
                 message: "Reliable maintenance and very courteous technicians.",
-                image: "../assets/home/female2.jpg",
+                image: "../assets/home/user-avatar.jpg",
               },
               {
                 name: "Michael Debrah",
                 message: "Great customer care and fast responses. Highly recommend!",
-                image: "../assets/home/male1.jpg",
+                image: "../assets/home/user-avatar.jpg",
               },
               {
                 name: "Esther Tetteh",
                 message: "Great products and AC installation.",
-                image: "../assets/home/female1.png",
+                image: "../assets/home/user-avatar.jpg",
               },
               {
                 name: "Sampson Asare",
                 message: "Fast responds for maintainance and great service.",
-                image: "../assets/home/male2.jpg",
+                image: "../assets/home/user-avatar.jpg",
               },
               {
                 name: "Peter Ntem",
                 message: "Great customer for my gas and oven repairs.",
-                image: "../assets/home/male3.jpg",
+                image: "../assets/home/user-avatar.jpg",
               },
             ].map((testimonial, idx) => (
               <div
