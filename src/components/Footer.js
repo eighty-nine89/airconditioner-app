@@ -68,7 +68,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='text-center w-full mt-4 text-xs bg-light-gray p-3 font-light'>
-                <p>&copy;2025 by Megatech Cooling Services. All rights Reserved. Developed by <span className='underline hover:text-gray'><a href="https://samuelawuetey.onrender.com" target='_blank' rel='noreferrer'>89Devs</a></span></p>
+                <p>&copy;2025 by Megatech Cooling Services. All Rights Reserved. Developed by <span className='underline hover:text-gray'><a href="https://samuelawuetey.onrender.com" target='_blank' rel='noreferrer'>89Devs</a></span></p>
             </div>
         </div>
     )
