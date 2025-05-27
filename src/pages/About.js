@@ -96,7 +96,7 @@ const About = () => {
                                 {
                                     name: "John Kwasi Amegadje",
                                     position: "GM / Chief Engineer",
-                                    img: "../assets/home/user-avatar.jpg"
+                                    img: "../assets/gallery/IMG-20250527-WA0008.jpg"
                                 },
                                 {
                                     name: "Emmanuel K. Somabe",

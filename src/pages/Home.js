@@ -239,7 +239,7 @@ const [activeIndex, setActiveIndex] = useState(0);
           <ScrollReveal>
             <div className='flex flex-col lg:flex-row justify-center items-center flex-1 w-full h-full mx-auto mt-10 lg:px-0 lg:mt-10 gap-5 lg:gap-10'>
               <div className='otherProduct'>
-                <img src='../assets/ourservices/acrepairs.jpg' alt='air condition' className='w-full h-48 object-cover transform hover:scale-105 transition duration-500 ease-in-out rounded-xl shadow-lg' />
+                <img src='../assets/gallery/IMG-20250527-WA0017.jpg' alt='air condition' className='w-full h-48 object-cover transform hover:scale-105 transition duration-500 ease-in-out rounded-xl shadow-lg' />
                 <p className='text-gray text-base capitalize mt-2'>Air conditioner sales & Installation</p>
                 <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
                   We offer a wide range of high-quality air conditioning units suitable for both residential and commercial use. Our expert technicians ensure seamless installation,
@@ -248,7 +248,7 @@ const [activeIndex, setActiveIndex] = useState(0);
 
               </div>
               <div className='otherProduct'>
-                <img src='../assets/ourservices/openac.jpg' alt='air condition' className='w-full h-48 object-cover transform hover:scale-105 transition duration-500 ease-in-out rounded-xl shadow-lg' />
+                <img src='../assets/gallery/IMG-20250527-WA0027.jpg' alt='air condition' className='w-full h-48 object-cover transform hover:scale-105 transition duration-500 ease-in-out rounded-xl shadow-lg' />
                 <p className='text-base text-gray capitalize mt-2'>General Maintainance Services</p>
                 <p className='text-justify tracking-tighter mt-2 font-light text-sm capitalize'>
                   Our general maintenance services cover routine inspections, cleaning, and minor repairs for home and commercial appliances. Regular
@@ -256,11 +256,10 @@ const [activeIndex, setActiveIndex] = useState(0);
                 </p>
               </div>
               <div className='otherProduct'>
-                <img src='../assets/ourservices/gasrepair.jpg' alt='air condition' className='w-full h-48 object-cover transform hover:scale-105 transition duration-500 ease-in-out rounded-xl shadow-lg' />
-                <p className='text-gray text-base capitalize mt-2'>Reparation of Gas & Electric Ovens</p>
+                <img src='../assets/gallery/IMG-20250527-WA0020.jpg' alt='air condition' className='w-full h-48 object-cover transform hover:scale-105 transition duration-500 ease-in-out rounded-xl shadow-lg' />
+                <p className='text-gray text-base capitalize mt-2'>Rewinding of all kind of motors</p>
                 <p className='text-justify mt-2 tracking-tighter font-light text-sm capitalize'>
-                  We specialize in diagnosing and repairing faults in both gas and electric ovens. Whether it’s a malfunctioning heating element, ignition issue, or control panel fault,
-                  our trained technicians restore your oven’s functionality with reliable and safe solutions.
+                 We offer expert rewinding services for all types of electric motors, including fan motors, pump motors, and industrial units. Our precise rewinding restores motor efficiency, extends lifespan, and reduces the need for costly replacements.
                 </p>
               </div>
               <div className='otherProduct'>
@@ -319,7 +318,7 @@ const [activeIndex, setActiveIndex] = useState(0);
         <div className='relative flex flex-row justify-between gap-10 items-center w-full h-80 bg-light-gray lg:mb-10 mb-10'>
           {/* Image */}
           <div className='flex-1 lg:visible invisible justify-center items-center w-full h-full'>
-            <img src="../assets/home/ac.jpg" alt="Air Conditioner" className='w-full h-80 object-cover' />
+            <img src="../assets/gallery/IMG-20250527-WA0018.jpg" alt="Air Conditioner" className='w-full h-80 object-cover' />
           </div>
           {/* About us */}
           <div className='flex flex-col lg:flex-1 justify-center items-center w-full h-full'>

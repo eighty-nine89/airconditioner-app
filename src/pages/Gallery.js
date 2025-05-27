@@ -76,7 +76,7 @@ const Gallery = () => {
                         </div>
                         <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
                             <img
-                                src="../assets/gallery/ac1.avif"
+                                src="../assets/gallery/IMG-20250527-WA0015.jpg"
                                 alt="gallery logo"
                                 className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
                             />
@@ -88,21 +88,99 @@ const Gallery = () => {
                     <div className='flex flex-col lg:flex-row items-center gap-5'>
                         <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
                             <img
-                                src="../assets/ourservices/refrigerator.jpg"
+                                src="../assets/gallery/IMG-20250527-WA0008.jpg"
                                 alt="gallery logo"
                                 className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
                             />
                         </div>
                         <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
                             <img
-                                src="../assets/ourservices/acrepairs.jpg"
+                                src="../assets/gallery/IMG-20250527-WA0020.jpg"
                                 alt="gallery logo"
                                 className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
                             />
                         </div>
                         <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
                             <img
-                                src="../assets/ourservices/gasrepair.jpg"
+                                src="../assets/gallery/IMG-20250527-WA0017.jpg"
+                                alt="gallery logo"
+                                className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
+                            />
+                        </div>
+                    </div>
+                </ScrollReveal>
+                {/* third Row Gallery*/}
+                <ScrollReveal>
+                    <div className='flex flex-col lg:flex-row items-center gap-5'>
+                        <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
+                            <img
+                                src="../assets/gallery/IMG-20250527-WA0016.jpg"
+                                alt="gallery logo"
+                                className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
+                            />
+                        </div>
+                        <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
+                            <img
+                                src="../assets/gallery/IMG-20250527-WA0018.jpg"
+                                alt="gallery logo"
+                                className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
+                            />
+                        </div>
+                        <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
+                            <img
+                                src="../assets/gallery/IMG-20250527-WA0007.jpg"
+                                alt="gallery logo"
+                                className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
+                            />
+                        </div>
+                    </div>
+                </ScrollReveal>
+                {/* fourth Row Gallery*/}
+                <ScrollReveal>
+                    <div className='flex flex-col lg:flex-row items-center gap-5'>
+                        <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
+                            <img
+                                src="../assets/gallery/IMG-20250527-WA0019.jpg"
+                                alt="gallery logo"
+                                className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
+                            />
+                        </div>
+                        <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
+                            <img
+                                src="../assets/gallery/IMG-20250527-WA0026.jpg"
+                                alt="gallery logo"
+                                className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
+                            />
+                        </div>
+                        <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
+                            <img
+                                src="../assets/gallery/IMG-20250527-WA0027.jpg"
+                                alt="gallery logo"
+                                className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
+                            />
+                        </div>
+                    </div>
+                </ScrollReveal>
+                {/* fifth Row Gallery*/}
+                <ScrollReveal>
+                    <div className='flex flex-col lg:flex-row items-center gap-5'>
+                        <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
+                            <img
+                                src="../assets/gallery/IMG-20250527-WA0028.jpg"
+                                alt="gallery logo"
+                                className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
+                            />
+                        </div>
+                        <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
+                            <img
+                                src="../assets/gallery/IMG-20250527-WA0021.jpg"
+                                alt="gallery logo"
+                                className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
+                            />
+                        </div>
+                        <div className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
+                            <img
+                                src="../assets/gallery/IMG-20250527-WA0038.jpg"
                                 alt="gallery logo"
                                 className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
                             />

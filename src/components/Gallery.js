@@ -16,7 +16,7 @@ const Gallery = () => {
       <ScrollReveal animationClass="animate-slide-left" threshold={0.2} delay={300}>
         <div className='backgroundImg mt-16 mb-16 px-4 sm:px-10 lg:px-32 xl:px-80'>
           <div className='gallery grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
-            {["mega1.jpg", "refrigerator.jpg", "gasrepair.jpg", "ac1.avif", "acrepairs.jpg", "openac.jpg"].map((img, index) => (
+            {["mega1.jpg", "IMG-20250527-WA0017.jpg", "IMG-20250527-WA0015.jpg", "IMG-20250527-WA0016.jpg", "IMG-20250527-WA0020.jpg", "IMG-20250527-WA0008.jpg"].map((img, index) => (
               <div className='cardImg' key={index}>
                 <figure>
                   <img src={`../assets/gallery/${img}`} alt='Preview' className='w-full h-auto rounded-lg shadow-md' />
