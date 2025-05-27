@@ -7,7 +7,8 @@ import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Gallery from '../components/Gallery';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaArrowTrendUp, FaHandsHolding, FaXTwitter } from 'react-icons/fa6';
+import { GiBullseye } from 'react-icons/gi';
 
 const About = () => {
     return (
@@ -148,29 +149,32 @@ const About = () => {
                 <div className="flex flex-row justify-center items-center p-5 lg:px-40 lg:mb-5 mb-5">
                     <div className="flex flex-wrap justify-center items-center gap-5 w-full mt-5">
                         <div className="w-full sm:w-1/2 lg:w-1/4 fade-in shadow-lg pl-8 pr-8 pb-4 pt-4 rounded-lg">
+                        <GiBullseye className="text-4xl text-gray hover:black mb-3 mx-auto" />
                             <h2 className="mb-3 text-center lg:text-xl">
                                 <span className="text-gray text-lg lg:text-xl font-semibold">01.</span> VISION
                             </h2>
-                            <p className="text-justify font-light tracking-tight">
+                            <p className="text-justify font-light tracking-tight text-sm">
                                 To become the first at it best trusted refrigeration and air condition engineer for our clients.
                             </p>
                         </div>
 
                         <div className="w-full sm:w-1/2 lg:w-1/4 fade-in shadow-lg pl-8 pr-8 pb-4 pt-4 rounded-lg">
+                        <FaArrowTrendUp className="text-4xl text-gray hover:black mb-3 mx-auto" />
                             <h2 className="mb-3 text-center lg:text-xl">
                                 <span className="text-gray text-lg lg:text-xl font-semibold">02.</span> MISSION
                             </h2>
-                            <p className="text-justify font-light tracking-tight">
+                            <p className="text-justify font-light tracking-tight text-sm">
                                 To provide responsible, safe and efficient trusted solutions to our clients with the right quality mass
                                 dependable ease of effective air condition engineering.
                             </p>
                         </div>
 
                         <div className="w-full sm:w-1/2 lg:w-1/4 fade-in shadow-lg pl-8 pr-8 pb-4 pt-4 rounded-lg">
+                        <FaHandsHolding className="text-4xl text-gray hover:black mb-3 mx-auto" />
                             <h2 className="mb-3 text-center lg:text-xl">
                                 <span className="text-gray text-lg lg:text-xl font-semibold">03.</span> VALUES
                             </h2>
-                            <p className="text-center font-light tracking-tight">
+                            <p className="text-center font-light tracking-tight text-sm">
                                 Integrity
                                 <br />
                                 Innovation
