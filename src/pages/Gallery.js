@@ -153,7 +153,7 @@ const Gallery = () => {
                                 className={`relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium transition-colors duration-200 ${
                                     currentPage === i + 1
                                         ? 'z-10 bg-dark-gray border-dark-gray text-white'
-                                        : 'text-gray-700 hover:bg-gray-50'
+                                        : 'text-gray-700 hover:bg-light-gray'
                                 }`}
                             >
                                 {i + 1}
