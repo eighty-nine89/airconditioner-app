@@ -110,7 +110,7 @@ const [activeIndex, setActiveIndex] = useState(0);
             type="button"
             onClick={() => goToSlide(index)} // Go to the clicked slide
             // Dynamically apply background color based on active slide
-            className={`h-2 w-2 rounded-full ${
+            className={`h-4 w-4 rounded-full ${
               activeIndex === index ? 'bg-white' : 'bg-black bg-opacity-50'
             }`}
           ></button>
