@@ -120,7 +120,7 @@ const Gallery = () => {
                             <div key={index} className='w-full h-56 overflow-hidden rounded-lg shadow-xl'>
                                 <img
                                     src={image}
-                                    alt={`gallery image ${indexOfFirstImage + index + 1}`}
+                                    alt={`gallery images ${indexOfFirstImage + index + 1}`}
                                     className='w-full h-full object-cover transform hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out'
                                     // Fallback for broken images
                                     onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/600x400/cccccc/333333?text=Image+Not+Found`; }}
@@ -152,7 +152,7 @@ const Gallery = () => {
                                 onClick={() => paginate(i + 1)}
                                 className={`relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium transition-colors duration-200 ${
                                     currentPage === i + 1
-                                        ? 'z-10 bg-dark-gray border-gray-400 text-white'
+                                        ? 'z-10 bg-dark-gray border-dark-gray text-white'
                                         : 'text-gray-700 hover:bg-gray-50'
                                 }`}
                             >
