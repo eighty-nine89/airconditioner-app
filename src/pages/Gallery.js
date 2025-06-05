@@ -150,8 +150,10 @@ const Gallery = () => {
                             <button
                                 key={i + 1}
                                 onClick={() => paginate(i + 1)}
-                                className={`relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium ${
-                                    currentPage === i + 1 ? 'z-10 bg-indigo-50 border-indigo-500 text-indigo-600' : 'text-gray-700 hover:bg-gray-50'
+                                className={`relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium transition-colors duration-200 ${
+                                    currentPage === i + 1
+                                        ? 'z-10 bg-indigo-600 border-indigo-600 text-white'
+                                        : 'text-gray-700 hover:bg-gray-50'
                                 }`}
                             >
                                 {i + 1}
@@ -172,7 +174,7 @@ const Gallery = () => {
                     </nav>
                 </div>
             </div>
-            <Footer /> {/* Original Footer component */}
+            <Footer /> 
         </div>
     )
 }
