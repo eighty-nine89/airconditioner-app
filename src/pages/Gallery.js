@@ -145,20 +145,20 @@ const Gallery = () => {
                             </svg>
                         </button>
 
-                        {/* Page Numbers */}
+                         {/* Page Numbers */}
                         {Array.from({ length: totalPages }, (_, i) => (
                             <button
                                 key={i + 1}
                                 onClick={() => paginate(i + 1)}
-                                className={`relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium transition-colors duration-200 ${
+                                className={`relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium transition-colors duration-200 ${
                                     currentPage === i + 1
-                                        && 'z-5 bg-dark-gray border-dark-gray text-white'
-                                        // : 'text-gray hover:bg-white'
+                                        ? 'z-10 bg-gray-600 border-gray-600 text-white'
+                                        : 'bg-white text-gray-700 hover:bg-gray-100'
                                 }`}
                             >
                                 {i + 1}
                             </button>
-                        ))}
+                        ))}                
 
                         {/* Next Button */}
                         <button
